@@ -1,0 +1,10 @@
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe.config
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.pdb
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.csproj.AssemblyReference.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.frmLogin.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Properties.Resources.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.csproj.GenerateResource.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.csproj.CoreCompileInputs.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.pdb

@@ -1,0 +1,184 @@
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe.config
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.pdb
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.AssemblyReference.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.frmLogin.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmPrincipal.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Properties.Resources.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.GenerateResource.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.CoreCompileInputs.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.pdb
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmUsuario.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe.config
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.pdb
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.AssemblyReference.cache
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.frmLogin.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmPrincipal.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmUsuario.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Properties.Resources.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.GenerateResource.cache
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.CoreCompileInputs.cache
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.exe
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.pdb
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe.config
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.pdb
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.AssemblyReference.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.frmLogin.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmPrincipal.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmUsuario.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Properties.Resources.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.GenerateResource.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.CoreCompileInputs.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.pdb
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCliente.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCancelar.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmProduto.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmVenda.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.AssemblyReference.cache
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCancelar.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCliente.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.frmLogin.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmPrincipal.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmProduto.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmUsuario.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmVenda.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Properties.Resources.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.GenerateResource.cache
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.CoreCompileInputs.cache
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.exe
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.pdb
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe.config
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 21.06\Ae - Controle de Vendas\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.pdb
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.AssemblyReference.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCancelar.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCliente.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.frmLogin.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmPrincipal.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmProduto.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmUsuario.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmVenda.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Properties.Resources.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.GenerateResource.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.CoreCompileInputs.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.pdb
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe.config
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.pdb
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 23.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe.config
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.pdb
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.AssemblyReference.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCancelar.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCliente.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.frmLogin.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmPrincipal.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmProduto.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmUsuario.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmVenda.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Properties.Resources.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.GenerateResource.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.CoreCompileInputs.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 24.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.pdb
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe.config
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.pdb
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.AssemblyReference.cache
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCancelar.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCliente.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.frmLogin.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmPrincipal.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmProduto.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmUsuario.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmVenda.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Properties.Resources.resources
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.GenerateResource.cache
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.CoreCompileInputs.cache
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.exe
+C:\Users\Rafaeel\source\repos\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.pdb
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.AssemblyReference.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCancelar.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCliente.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.frmLogin.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmPrincipal.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmProduto.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmUsuario.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmVenda.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Properties.Resources.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.GenerateResource.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.CoreCompileInputs.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.pdb
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe.config
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.pdb
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe.config
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.pdb
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.AssemblyReference.cache
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCancelar.resources
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCliente.resources
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.frmLogin.resources
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmPrincipal.resources
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmProduto.resources
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmUsuario.resources
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmVenda.resources
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Properties.Resources.resources
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.GenerateResource.cache
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.CoreCompileInputs.cache
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.exe
+E:\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.pdb
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe.config
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.pdb
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.AssemblyReference.cache
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCliente.resources
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.frmLogin.resources
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmPrincipal.resources
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmProduto.resources
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmUsuario.resources
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmVenda.resources
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Properties.Resources.resources
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.GenerateResource.cache
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.CoreCompileInputs.cache
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.exe
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.pdb
+C:\Users\Rafaeel\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.FormaPagamento.resources
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe.config
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.pdb
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.AssemblyReference.cache
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.FormaPagamento.resources
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCliente.resources
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.frmLogin.resources
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmPrincipal.resources
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmProduto.resources
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmUsuario.resources
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmVenda.resources
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Properties.Resources.resources
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.GenerateResource.cache
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.CoreCompileInputs.cache
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Aqui\Ae - Controle de Vendas - 26.06\Ae - Controle de Vendas - 25.06\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.pdb
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe.config
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\bin\Debug\Ae - Controle de Vendas.pdb
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.AssemblyReference.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.FormaPagamento.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmCliente.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.frmLogin.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmPrincipal.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmProduto.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmUsuario.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Formulários.frmVenda.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae___Controle_de_Vendas.Properties.Resources.resources
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.GenerateResource.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ac - Controle de Vendas.csproj.CoreCompileInputs.cache
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.exe
+C:\Users\rafael.caraujo11\source\repos\Ae - Controle de Vendas 3.0\Ae - Controle de Vendas\Ae - Controle de Vendas\obj\Debug\Ae - Controle de Vendas.pdb
