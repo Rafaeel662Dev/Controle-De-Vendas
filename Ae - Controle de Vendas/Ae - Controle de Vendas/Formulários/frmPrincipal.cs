@@ -159,7 +159,7 @@ namespace Ae___Controle_de_Vendas.Formulários
             timer1.Enabled = false;
             mnuConsulta.Enabled = false;
             mnuVendas.Enabled = false;
-          
+            mnuUsuario.Visible = false;
             mnuDesconectar.Enabled = false;
             mnuLogar.Enabled = true;
         }
@@ -183,12 +183,8 @@ namespace Ae___Controle_de_Vendas.Formulários
 
             if (user.PermissaoId == 1)
             {
-                
-                mnuUsuario.Visible = true;
-                
-            } else if(user.PermissaoId == 2){
-                
-            } 
+              mnuUsuario.Visible = true;
+            }
 
             timer1.Enabled = true;
             login = DateTime.Now;
