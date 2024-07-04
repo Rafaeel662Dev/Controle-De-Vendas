@@ -48,20 +48,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Banco de Dados\AcessoDB.cs" />
-    <Compile Include="Classes\Outros\Cliente.cs" />
-    <Compile Include="Classes\Outros\Endereco.cs" />
-    <Compile Include="Classes\Outros\Global.cs" />
-    <Compile Include="Classes\Outros\Item.cs" />
-    <Compile Include="Classes\Outros\NotaFiscal.cs" />
-    <Compile Include="Classes\Outros\Produto.cs" />
-    <Compile Include="Classes\Outros\Usuario.cs" />
-    <Compile Include="Classes\Outros\Venda.cs" />
-    <Compile Include="Formulários\FormaPagamento.cs">
+    <Compile Include="Classes\AcessoDB.cs" />
+    <Compile Include="Objetos\Cliente.cs" />
+    <Compile Include="Objetos\Endereco.cs" />
+    <Compile Include="Classes\Global.cs" />
+    <Compile Include="Objetos\Item.cs" />
+    <Compile Include="Objetos\NotaFiscal.cs" />
+    <Compile Include="Objetos\Produto.cs" />
+    <Compile Include="Objetos\Usuario.cs" />
+    <Compile Include="Objetos\Venda.cs" />
+    <Compile Include="Formulários\frmPagamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\FormaPagamento.Designer.cs">
-      <DependentUpon>FormaPagamento.cs</DependentUpon>
+    <Compile Include="Formulários\frmPagamento.Designer.cs">
+      <DependentUpon>frmPagamento.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulários\frmCliente.cs">
       <SubType>Form</SubType>
@@ -101,8 +101,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formulários\FormaPagamento.resx">
-      <DependentUpon>FormaPagamento.cs</DependentUpon>
+    <EmbeddedResource Include="Formulários\frmPagamento.resx">
+      <DependentUpon>frmPagamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários\frmCliente.resx">
       <DependentUpon>frmCliente.cs</DependentUpon>
@@ -155,7 +155,6 @@
     <None Include="Resources\MicrosoftTeams-image %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Classes\Banco de Dados\BD.txt" />
     <None Include="Resources\Apresentação Cardápio Agenda Páscoa.png" />
     <None Include="Resources\LoginForm.jpg" />
     <None Include="Resources\iconLogin.png" />
@@ -169,11 +168,13 @@
     <None Include="Resources\Fechar.png" />
     <None Include="Resources\Venda.png" />
     <None Include="Resources\Cliente.png" />
-    <None Include="Resources\9396a2bcb9d407952a39e2251f70cb14.png" />
     <None Include="Resources\Usuario.png" />
     <None Include="Resources\produto.png" />
     <None Include="Resources\siste.png" />
     <None Include="Resources\1f4b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Query%27s\GitHub.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

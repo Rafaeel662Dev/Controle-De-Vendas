@@ -1,0 +1,5 @@
+CMD -> CD *
+CMD -> git add .
+CMD -> git commit -m ""
+CMD -> git push -u origin master
+
