@@ -93,7 +93,7 @@
             this.lblPesquisa.Location = new System.Drawing.Point(15, 19);
             this.lblPesquisa.Name = "lblPesquisa";
             this.lblPesquisa.Size = new System.Drawing.Size(53, 13);
-            this.lblPesquisa.TabIndex = 0;
+            this.lblPesquisa.TabIndex = 3;
             this.lblPesquisa.Text = "Pesquisa:";
             // 
             // txtPesquisa
@@ -101,7 +101,7 @@
             this.txtPesquisa.Location = new System.Drawing.Point(70, 16);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(412, 20);
-            this.txtPesquisa.TabIndex = 1;
+            this.txtPesquisa.TabIndex = 0;
             this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             this.txtPesquisa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPesquisa_KeyPress);
             // 
@@ -112,7 +112,7 @@
             this.rdbNome.Location = new System.Drawing.Point(501, 19);
             this.rdbNome.Name = "rdbNome";
             this.rdbNome.Size = new System.Drawing.Size(53, 17);
-            this.rdbNome.TabIndex = 2;
+            this.rdbNome.TabIndex = 1;
             this.rdbNome.TabStop = true;
             this.rdbNome.Text = "Nome";
             this.rdbNome.UseVisualStyleBackColor = true;
@@ -123,7 +123,7 @@
             this.rdbCPF.Location = new System.Drawing.Point(560, 19);
             this.rdbCPF.Name = "rdbCPF";
             this.rdbCPF.Size = new System.Drawing.Size(45, 17);
-            this.rdbCPF.TabIndex = 3;
+            this.rdbCPF.TabIndex = 2;
             this.rdbCPF.Text = "CPF";
             this.rdbCPF.UseVisualStyleBackColor = true;
             this.rdbCPF.CheckedChanged += new System.EventHandler(this.rdbCPF_CheckedChanged);
@@ -159,7 +159,7 @@
             this.grpDadosPessoais.Location = new System.Drawing.Point(12, 204);
             this.grpDadosPessoais.Name = "grpDadosPessoais";
             this.grpDadosPessoais.Size = new System.Drawing.Size(317, 275);
-            this.grpDadosPessoais.TabIndex = 1;
+            this.grpDadosPessoais.TabIndex = 2;
             this.grpDadosPessoais.TabStop = false;
             this.grpDadosPessoais.Text = "Dados Pessoais";
             // 
@@ -168,7 +168,7 @@
             this.txtCPF.Location = new System.Drawing.Point(64, 78);
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(173, 20);
-            this.txtCPF.TabIndex = 5;
+            this.txtCPF.TabIndex = 7;
             this.txtCPF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPF_KeyPress);
             // 
             // lblCPF
@@ -177,7 +177,7 @@
             this.lblCPF.Location = new System.Drawing.Point(15, 81);
             this.lblCPF.Name = "lblCPF";
             this.lblCPF.Size = new System.Drawing.Size(27, 13);
-            this.lblCPF.TabIndex = 4;
+            this.lblCPF.TabIndex = 5;
             this.lblCPF.Text = "CPF";
             // 
             // groupBoxSexo
@@ -187,7 +187,7 @@
             this.groupBoxSexo.Location = new System.Drawing.Point(152, 41);
             this.groupBoxSexo.Name = "groupBoxSexo";
             this.groupBoxSexo.Size = new System.Drawing.Size(159, 32);
-            this.groupBoxSexo.TabIndex = 5;
+            this.groupBoxSexo.TabIndex = 4;
             this.groupBoxSexo.TabStop = false;
             this.groupBoxSexo.Text = "Sexo";
             // 
@@ -218,7 +218,7 @@
             this.txtEmail.Location = new System.Drawing.Point(64, 104);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(240, 20);
-            this.txtEmail.TabIndex = 7;
+            this.txtEmail.TabIndex = 9;
             // 
             // lblEmail
             // 
@@ -226,7 +226,7 @@
             this.lblEmail.Location = new System.Drawing.Point(15, 107);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(35, 13);
-            this.lblEmail.TabIndex = 6;
+            this.lblEmail.TabIndex = 8;
             this.lblEmail.Text = "E-mail";
             // 
             // txtCelular
@@ -234,7 +234,7 @@
             this.txtCelular.Location = new System.Drawing.Point(64, 53);
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(82, 20);
-            this.txtCelular.TabIndex = 3;
+            this.txtCelular.TabIndex = 4;
             // 
             // lblCelular
             // 
@@ -242,7 +242,7 @@
             this.lblCelular.Location = new System.Drawing.Point(15, 56);
             this.lblCelular.Name = "lblCelular";
             this.lblCelular.Size = new System.Drawing.Size(39, 13);
-            this.lblCelular.TabIndex = 2;
+            this.lblCelular.TabIndex = 3;
             this.lblCelular.Text = "Celular";
             // 
             // txtNome
@@ -250,7 +250,7 @@
             this.txtNome.Location = new System.Drawing.Point(64, 20);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(240, 20);
-            this.txtNome.TabIndex = 1;
+            this.txtNome.TabIndex = 2;
             // 
             // lblNome
             // 
@@ -258,7 +258,7 @@
             this.lblNome.Location = new System.Drawing.Point(15, 23);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(35, 13);
-            this.lblNome.TabIndex = 0;
+            this.lblNome.TabIndex = 1;
             this.lblNome.Text = "Nome";
             // 
             // groupBox2
@@ -275,7 +275,7 @@
             this.groupBox2.Location = new System.Drawing.Point(18, 130);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(288, 122);
-            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados Login";
             // 
@@ -284,7 +284,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(52, 19);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(144, 20);
-            this.txtUsuario.TabIndex = 1;
+            this.txtUsuario.TabIndex = 2;
             // 
             // lblUsuario
             // 
@@ -302,7 +302,7 @@
             this.grpAtivo.Location = new System.Drawing.Point(202, 19);
             this.grpAtivo.Name = "grpAtivo";
             this.grpAtivo.Size = new System.Drawing.Size(80, 68);
-            this.grpAtivo.TabIndex = 5;
+            this.grpAtivo.TabIndex = 3;
             this.grpAtivo.TabStop = false;
             this.grpAtivo.Text = "Usuario";
             // 
@@ -334,7 +334,7 @@
             this.cboPermissao.Location = new System.Drawing.Point(153, 97);
             this.cboPermissao.Name = "cboPermissao";
             this.cboPermissao.Size = new System.Drawing.Size(129, 21);
-            this.cboPermissao.TabIndex = 5;
+            this.cboPermissao.TabIndex = 0;
             // 
             // lblPermissao
             // 
@@ -342,7 +342,7 @@
             this.lblPermissao.Location = new System.Drawing.Point(92, 100);
             this.lblPermissao.Name = "lblPermissao";
             this.lblPermissao.Size = new System.Drawing.Size(55, 13);
-            this.lblPermissao.TabIndex = 4;
+            this.lblPermissao.TabIndex = 8;
             this.lblPermissao.Text = "Permissao";
             // 
             // lblSenha
@@ -351,7 +351,7 @@
             this.lblSenha.Location = new System.Drawing.Point(3, 48);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(38, 13);
-            this.lblSenha.TabIndex = 2;
+            this.lblSenha.TabIndex = 4;
             this.lblSenha.Text = "Senha";
             // 
             // txtSenha
@@ -359,7 +359,7 @@
             this.txtSenha.Location = new System.Drawing.Point(52, 45);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(144, 20);
-            this.txtSenha.TabIndex = 3;
+            this.txtSenha.TabIndex = 5;
             this.txtSenha.UseSystemPasswordChar = true;
             // 
             // groupBoxEndereco
@@ -381,7 +381,7 @@
             this.groupBoxEndereco.Location = new System.Drawing.Point(336, 204);
             this.groupBoxEndereco.Name = "groupBoxEndereco";
             this.groupBoxEndereco.Size = new System.Drawing.Size(304, 197);
-            this.groupBoxEndereco.TabIndex = 2;
+            this.groupBoxEndereco.TabIndex = 3;
             this.groupBoxEndereco.TabStop = false;
             this.groupBoxEndereco.Text = "Endereço";
             // 
@@ -510,7 +510,7 @@
             this.grpUsuario.Location = new System.Drawing.Point(12, 48);
             this.grpUsuario.Name = "grpUsuario";
             this.grpUsuario.Size = new System.Drawing.Size(628, 150);
-            this.grpUsuario.TabIndex = 8;
+            this.grpUsuario.TabIndex = 1;
             this.grpUsuario.TabStop = false;
             this.grpUsuario.Text = "Usuarios:";
             // 
@@ -532,7 +532,7 @@
             this.btnGravar.Location = new System.Drawing.Point(345, 428);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(75, 23);
-            this.btnGravar.TabIndex = 3;
+            this.btnGravar.TabIndex = 4;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = true;
             this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
@@ -542,7 +542,7 @@
             this.btnLimpar.Location = new System.Drawing.Point(562, 428);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpar.TabIndex = 4;
+            this.btnLimpar.TabIndex = 5;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click_1);

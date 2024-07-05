@@ -221,7 +221,7 @@
             // 
             // btnGravar
             // 
-            this.btnGravar.Location = new System.Drawing.Point(30, 424);
+            this.btnGravar.Location = new System.Drawing.Point(76, 424);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(75, 23);
             this.btnGravar.TabIndex = 1;
@@ -231,7 +231,7 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(416, 424);
+            this.btnLimpar.Location = new System.Drawing.Point(512, 424);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpar.TabIndex = 2;
@@ -256,12 +256,12 @@
             this.grdDados.AllowUserToResizeColumns = false;
             this.grdDados.AllowUserToResizeRows = false;
             this.grdDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdDados.Location = new System.Drawing.Point(11, 31);
+            this.grdDados.Location = new System.Drawing.Point(11, 19);
             this.grdDados.MultiSelect = false;
             this.grdDados.Name = "grdDados";
             this.grdDados.ReadOnly = true;
             this.grdDados.RowHeadersVisible = false;
-            this.grdDados.Size = new System.Drawing.Size(619, 121);
+            this.grdDados.Size = new System.Drawing.Size(619, 158);
             this.grdDados.TabIndex = 1;
             this.grdDados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDados_CellClick);
             // 

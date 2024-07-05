@@ -132,9 +132,17 @@ namespace Ae___Controle_de_Vendas.Formulários
                     msgErro += "A Confirmação de Senha Não Confere";
                 }
 
-                if (txtNome.Text == string.Empty)
+                if (string.IsNullOrWhiteSpace(txtNome.Text))
                 {
-                    msgErro += "Preencha o NOME.\n";
+                    msgErro += "Nome é obrigatório!\n";
+                }
+                else if (!txtNome.Text.Contains(" "))
+                {
+                    msgErro += "Necessário ter Sobrenome!\n";
+                }
+                else if (txtNome.Text.Trim().Split(' ').Length < 2)
+                {
+                    msgErro += "Necessário ter Sobrenome!\n";
                 }
 
                 if (txtCelular.Text == string.Empty)

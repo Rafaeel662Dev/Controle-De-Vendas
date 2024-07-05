@@ -147,7 +147,6 @@ namespace Ae___Controle_de_Vendas.Formulários
             {
               
                 grdDados.DataSource = cliente.Consultar();
-
                 grdDados.Columns[0].Visible = false;
                 grdDados.Columns[5].Visible = false;
                 grdDados.Columns[6].Visible = false;
@@ -257,6 +256,8 @@ public void PreencherClasse()
                 msgError = "Campo Logradouro Não Preenchido \n";
             }
 
+           
+
             if(txtNumero.Text == string.Empty)
             {
                 msgError += "Campo Numero Não Preenchido \n";
@@ -282,9 +283,17 @@ public void PreencherClasse()
                 msgError += "Campo Cidade Não Selecionado \n";
             }
 
-            if(txtNome.Text == string.Empty)
+            if (string.IsNullOrWhiteSpace(txtNome.Text))
             {
-                msgError += "Campo Nome Não Preenchido \n";
+                msgError += "Nome é obrigatório!\n";
+            }
+            else if (!txtNome.Text.Contains(" "))
+            {
+                msgError += "Necessário ter Sobrenome!\n";
+            }
+            else if (txtNome.Text.Trim().Split(' ').Length < 2)
+            {
+                msgError += "Necessário ter Sobrenome!\n";
             }
             if (txtCelular.Text == string.Empty)
             {
@@ -338,6 +347,7 @@ public void PreencherClasse()
                     MessageBox.Show("O Cliente AVULSO não pode ser editado!","Cliente",MessageBoxButtons.OK,MessageBoxIcon.Error);
                     return;
                 }
+
                 cliente.Gravar();
                 LimparCampos();
                 CarregarGridCliente();
@@ -359,9 +369,8 @@ public void PreencherClasse()
                     cliente = new Cliente();
                     cliente.Id = clientId;
                     cliente.Consultar();
-
+                    
                     PreencherFormulario();
-
                 }
             }
             catch (Exception ex)
