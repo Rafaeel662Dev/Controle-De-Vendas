@@ -75,6 +75,8 @@
             this.grpPesquisa = new System.Windows.Forms.GroupBox();
             this.btnGravar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtConfirmarSenha = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdDados)).BeginInit();
             this.grpDadosPessoais.SuspendLayout();
             this.groupBoxSexo.SuspendLayout();
@@ -261,6 +263,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.txtConfirmarSenha);
             this.groupBox2.Controls.Add(this.txtUsuario);
             this.groupBox2.Controls.Add(this.lblUsuario);
             this.groupBox2.Controls.Add(this.grpAtivo);
@@ -327,7 +331,7 @@
             // cboPermissao
             // 
             this.cboPermissao.FormattingEnabled = true;
-            this.cboPermissao.Location = new System.Drawing.Point(67, 94);
+            this.cboPermissao.Location = new System.Drawing.Point(153, 97);
             this.cboPermissao.Name = "cboPermissao";
             this.cboPermissao.Size = new System.Drawing.Size(129, 21);
             this.cboPermissao.TabIndex = 5;
@@ -335,7 +339,7 @@
             // lblPermissao
             // 
             this.lblPermissao.AutoSize = true;
-            this.lblPermissao.Location = new System.Drawing.Point(6, 97);
+            this.lblPermissao.Location = new System.Drawing.Point(92, 100);
             this.lblPermissao.Name = "lblPermissao";
             this.lblPermissao.Size = new System.Drawing.Size(55, 13);
             this.lblPermissao.TabIndex = 4;
@@ -543,6 +547,23 @@
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click_1);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 78);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Conf.";
+            // 
+            // txtConfirmarSenha
+            // 
+            this.txtConfirmarSenha.Location = new System.Drawing.Point(52, 71);
+            this.txtConfirmarSenha.Name = "txtConfirmarSenha";
+            this.txtConfirmarSenha.Size = new System.Drawing.Size(144, 20);
+            this.txtConfirmarSenha.TabIndex = 7;
+            this.txtConfirmarSenha.UseSystemPasswordChar = true;
+            // 
             // frmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -625,5 +646,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnGravar;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtConfirmarSenha;
     }
 }

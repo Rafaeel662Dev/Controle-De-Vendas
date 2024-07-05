@@ -127,6 +127,11 @@ namespace Ae___Controle_de_Vendas.Formulários
                     }
                 }
 
+                if(txtSenha.Text != txtConfirmarSenha.Text)
+                {
+                    msgErro += "A Confirmação de Senha Não Confere";
+                }
+
                 if (txtNome.Text == string.Empty)
                 {
                     msgErro += "Preencha o NOME.\n";
@@ -269,6 +274,7 @@ namespace Ae___Controle_de_Vendas.Formulários
             txtCPF.Text = user.CPF;
             txtEmail.Text = user.Email;
             txtSenha.Text = user.Password;
+            txtConfirmarSenha.Text = user.Password;
             txtUsuario.Text = user.Login;
             rdbAtivo.Checked = user.Ativo;
             rdbDesativado.Checked = !user.Ativo;
