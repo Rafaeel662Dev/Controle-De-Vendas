@@ -123,6 +123,16 @@ namespace Ae___Controle_de_Vendas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Consultar_Venda___frmVenda {
+            get {
+                object obj = ResourceManager.GetObject("Consultar Venda - frmVenda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Deslogar {
             get {
                 object obj = ResourceManager.GetObject("Deslogar", resourceCulture);

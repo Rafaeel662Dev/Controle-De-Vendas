@@ -49,6 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\AcessoDB.cs" />
+    <Compile Include="Formulários\frmVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\frmVenda.Designer.cs">
+      <DependentUpon>frmVenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Objetos\Cliente.cs" />
     <Compile Include="Objetos\Endereco.cs" />
     <Compile Include="Classes\Global.cs" />
@@ -93,11 +99,11 @@
     <Compile Include="Formulários\frmUsuario.Designer.cs">
       <DependentUpon>frmUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\frmVenda.cs">
+    <Compile Include="Formulários\frmCaixa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\frmVenda.Designer.cs">
-      <DependentUpon>frmVenda.cs</DependentUpon>
+    <Compile Include="Formulários\frmCaixa.Designer.cs">
+      <DependentUpon>frmCaixa.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários\frmUsuario.resx">
       <DependentUpon>frmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\frmCaixa.resx">
+      <DependentUpon>frmCaixa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários\frmVenda.resx">
       <DependentUpon>frmVenda.cs</DependentUpon>
@@ -175,6 +184,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Query%27s\GitHub.txt" />
+    <None Include="Resources\Consultar Venda - frmVenda.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

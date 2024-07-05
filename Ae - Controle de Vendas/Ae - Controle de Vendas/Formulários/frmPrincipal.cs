@@ -118,7 +118,7 @@ namespace Ae___Controle_de_Vendas.Formulários
 
         private void frmVenda_Click(object sender, EventArgs e)
         {
-            AbrirForm(new frmVenda());
+            AbrirForm(new frmCaixa());
         }
 
         private void frmCancelar_Click(object sender, EventArgs e)
@@ -220,6 +220,11 @@ namespace Ae___Controle_de_Vendas.Formulários
         private void mnuVendas_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void mnuVenda_Click(object sender, EventArgs e)
+        {
+            | AbrirForm(new frmVenda());
         }
     }
 }

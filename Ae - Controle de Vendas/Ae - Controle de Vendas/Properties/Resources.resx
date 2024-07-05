@@ -130,8 +130,8 @@
   <data name="LogoffOK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoffOK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Apresentação Cardápio Agenda Páscoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Apresentação Cardápio Agenda Páscoa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Deslogar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Deslogar1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -141,6 +141,9 @@
   </data>
   <data name="LoginIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoginIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fechar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fechar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SistemaIcone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SistemaIcone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,8 +160,8 @@
   <data name="iconLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fechar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fechar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Deslogar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Deslogar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,7 +181,7 @@
   <data name="siste" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\siste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Apresentação Cardápio Agenda Páscoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Apresentação Cardápio Agenda Páscoa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Consultar Venda - frmVenda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Consultar Venda - frmVenda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -40,7 +40,8 @@
             this.MnuProdutos = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuUsuario = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuVendas = new System.Windows.Forms.ToolStripMenuItem();
-            this.frmVenda = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCaixa = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuVenda = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblPermissao = new System.Windows.Forms.ToolStripStatusLabel();
@@ -143,21 +144,29 @@
             // mnuVendas
             // 
             this.mnuVendas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.frmVenda});
+            this.mnuCaixa,
+            this.mnuVenda});
             this.mnuVendas.Enabled = false;
             this.mnuVendas.Image = global::Ae___Controle_de_Vendas.Properties.Resources._1f4b2;
             this.mnuVendas.Name = "mnuVendas";
             this.mnuVendas.Size = new System.Drawing.Size(89, 25);
             this.mnuVendas.Text = "Vendas";
-            this.mnuVendas.Click += new System.EventHandler(this.mnuVendas_Click);
             // 
-            // frmVenda
+            // mnuCaixa
             // 
-            this.frmVenda.Image = global::Ae___Controle_de_Vendas.Properties.Resources.Venda;
-            this.frmVenda.Name = "frmVenda";
-            this.frmVenda.Size = new System.Drawing.Size(190, 26);
-            this.frmVenda.Text = "Realizar Vendas";
-            this.frmVenda.Click += new System.EventHandler(this.frmVenda_Click);
+            this.mnuCaixa.Image = global::Ae___Controle_de_Vendas.Properties.Resources.Venda;
+            this.mnuCaixa.Name = "mnuCaixa";
+            this.mnuCaixa.Size = new System.Drawing.Size(180, 26);
+            this.mnuCaixa.Text = "Caixa Vendas";
+            this.mnuCaixa.Click += new System.EventHandler(this.frmVenda_Click);
+            // 
+            // mnuVenda
+            // 
+            this.mnuVenda.Image = global::Ae___Controle_de_Vendas.Properties.Resources.Consultar_Venda___frmVenda;
+            this.mnuVenda.Name = "mnuVenda";
+            this.mnuVenda.Size = new System.Drawing.Size(180, 26);
+            this.mnuVenda.Text = "Exibir Vendas";
+            this.mnuVenda.Click += new System.EventHandler(this.mnuVenda_Click);
             // 
             // statusStrip1
             // 
@@ -242,7 +251,7 @@
         private System.Windows.Forms.ToolStripMenuItem MnuClientes;
         private System.Windows.Forms.ToolStripMenuItem MnuProdutos;
         private System.Windows.Forms.ToolStripMenuItem mnuUsuario;
-        private System.Windows.Forms.ToolStripMenuItem frmVenda;
+        private System.Windows.Forms.ToolStripMenuItem mnuCaixa;
         private System.Windows.Forms.ToolStripMenuItem mnuLogar;
         private System.Windows.Forms.ToolStripMenuItem mnuDesconectar;
         private System.Windows.Forms.ToolStripMenuItem mnuEncerrar;
@@ -252,5 +261,6 @@
         private System.Windows.Forms.ToolStripStatusLabel lblServidor;
         private System.Windows.Forms.ToolStripStatusLabel lblTempo;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripMenuItem mnuVenda;
     }
 }
