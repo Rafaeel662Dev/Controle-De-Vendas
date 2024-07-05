@@ -78,6 +78,8 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
                 throw new Exception(ex.Message);
             }
         }
+
+
         public static int ConsultarEstado(int cidadeId)
         {
             try

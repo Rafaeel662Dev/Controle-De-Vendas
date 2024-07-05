@@ -24,6 +24,8 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
         public int UsuarioId { get; set; }
         public Endereco Endereco {get; set;}
 
+        //Aqui
+
 
 
         public Cliente()

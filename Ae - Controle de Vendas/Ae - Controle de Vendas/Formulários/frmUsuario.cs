@@ -23,10 +23,6 @@ namespace Ae___Controle_de_Vendas.Formulários
         bool load = false;
         Usuario user = new Usuario();
 
-
- 
-
-
         private void frmUsuario_Load(object sender, EventArgs e)
         {
             CarregarEstados();
@@ -103,9 +99,10 @@ namespace Ae___Controle_de_Vendas.Formulários
             cboEstado.SelectedIndex = -1;
             cboPermissao.SelectedIndex = -1;
             txtCEP.Text = string.Empty;
+            cboCidade.Enabled = false;
+
             txtPesquisa.Focus();
 
-            cboCidade.Enabled = false;
         }
 
         private string ValidarPreenchimento()
@@ -245,11 +242,7 @@ namespace Ae___Controle_de_Vendas.Formulários
             try
             {
                 DataTable dt = user.getPermissions();
-
-                
                 cboPermissao.DataSource = dt;
-
-            
                 cboPermissao.DisplayMember = "Descricao";
                 cboPermissao.ValueMember = "Id";
                 cboPermissao.SelectedIndex = -1; 
@@ -264,6 +257,7 @@ namespace Ae___Controle_de_Vendas.Formulários
             
             txtNome.Text = user.Nome;
             txtCelular.Text = user.Telefone;
+
             if(user.SexoId != 1)
             {
                 rdbFeminino.Checked = true;
@@ -364,10 +358,6 @@ namespace Ae___Controle_de_Vendas.Formulários
             CarregarCidades();
         }
 
-
-
-	
-
         private void PreencherClasses()
         {
 	    
@@ -379,7 +369,7 @@ namespace Ae___Controle_de_Vendas.Formulários
         user.Endereco.CidadeId = Convert.ToInt32(cboCidade.SelectedValue);
 
 
-        user.Nome = txtUsuario.Text;
+        user.Nome = txtNome.Text;
         user.Telefone = txtCelular.Text;
         user.CPF = txtCPF.Text;
         user.Email = txtEmail.Text;
