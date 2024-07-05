@@ -27,7 +27,6 @@ namespace Ae___Controle_de_Vendas.Formulários
         DateTime login;
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-            
             Left = 0;
             Top = 0;
             Width = Screen.PrimaryScreen.WorkingArea.Width;
@@ -146,11 +145,7 @@ namespace Ae___Controle_de_Vendas.Formulários
         {
             foreach (Form filho in this.MdiChildren)
             {
-                
-                
-                    filho.Close();
-                   
-                
+             filho.Close();
             }
         }
 
@@ -162,6 +157,7 @@ namespace Ae___Controle_de_Vendas.Formulários
             mnuUsuario.Visible = false;
             mnuDesconectar.Enabled = false;
             mnuLogar.Enabled = true;
+            mnuVenda.Visible = false;
         }
 
         private void HabilitarMenus()
@@ -177,13 +173,10 @@ namespace Ae___Controle_de_Vendas.Formulários
             user.Id = Global.IdUsuarioLogado;
             user.Consultar();
 
-           // string nivelPermissao = user.PermissaoId;
-
-            //MessageBox.Show("" +user.PermissaoId  );
-
             if (user.PermissaoId == 1)
             {
               mnuUsuario.Visible = true;
+              mnuVenda.Visible = true;
             }
 
             timer1.Enabled = true;
@@ -224,7 +217,7 @@ namespace Ae___Controle_de_Vendas.Formulários
 
         private void mnuVenda_Click(object sender, EventArgs e)
         {
-            | AbrirForm(new frmVenda());
+             AbrirForm(new frmVenda());
         }
     }
 }
