@@ -1,10 +1,4 @@
 CMD -> CD *
 CMD -> git add .
 CMD -> git commit -m ""
-
-ss
 CMD -> git push -u origin master
-
-
-FOI 06/07
-
