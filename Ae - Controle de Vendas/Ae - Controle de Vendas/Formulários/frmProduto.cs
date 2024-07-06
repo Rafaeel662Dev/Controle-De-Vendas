@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Drawing.Text;
 using System.Globalization;
 using System.Linq;
+using System.Net.Configuration;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -78,7 +79,7 @@ namespace Ae___Controle_de_Vendas.Formulários
         {
             txtNome.Text = produto.Nome;
             txtCodigo.Text = produto.Codigo.ToString();
-            maskPreco.Text = produto.Preco.ToString();
+            maskPreco.Text = produto.Preco.ToString("C");
             
 
             cboCategoria.SelectedValue = produto.CategoriaId;
@@ -136,6 +137,23 @@ namespace Ae___Controle_de_Vendas.Formulários
             return msgError;
         }
 
+        private string verificarExistencia()
+        {
+
+            string msg = string.Empty;
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+            return msg;
+        }
+
         private void CarregarGridCategoria()
         {
             try
@@ -158,7 +176,6 @@ namespace Ae___Controle_de_Vendas.Formulários
         private void frmProduto_Load(object sender, EventArgs e)
         {
             load = true;
-            
             maskPreco.TextAlign = HorizontalAlignment.Left;
             maskPreco.TextMaskFormat = MaskFormat.IncludePromptAndLiterals;
             grdDados.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -169,8 +186,22 @@ namespace Ae___Controle_de_Vendas.Formulários
         grdDados.Columns[grdDados.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
     }
 
+            Usuario user = new Usuario();
+            user.Id = Global.IdUsuarioLogado;
+            user.Consultar();
+            if(user.PermissaoId == 3)
+            {
+                desabilitarCampos();
+            } 
+        }
 
-            
+        private void desabilitarCampos()
+        {
+            btnGravar.Enabled = false;
+            txtNome.Enabled = false;
+            txtCodigo.Enabled = false;
+            maskPreco.Enabled = false;
+            cboCategoria.Enabled = false;
         }
 
 
@@ -187,16 +218,6 @@ namespace Ae___Controle_de_Vendas.Formulários
                     {
                         MessageBox.Show(campos, "Erro de Preenchimento",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
-                    Usuario user = new Usuario();
-                    user.Id = Global.IdUsuarioLogado;
-                    user.Consultar();
-
-
-                    if(user.PermissaoId == 3) 
-                    {
-                        MessageBox.Show("Você não tem permissão", "Produto!",MessageBoxButtons.OK,MessageBoxIcon.Error);
                         return;
                     }
 
