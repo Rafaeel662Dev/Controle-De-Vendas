@@ -172,11 +172,23 @@ namespace Ae___Controle_de_Vendas.Formulários
                 existe.Codigo = Convert.ToInt32(txtCodigo.Text);
                 existe.Consultar();
 
-                if (existe.Codigo != 0 && produto.Codigo != 0
-                    && existe.Codigo == produto.Codigo)
+                if (produto.Id == 0 && existe.Id != 0 ||
+                        produto.Id != 0 && existe.Id != 0 && produto.Id != existe.Id)
                 {
-                    msg = "Codigo já existente";
+                    msg = "Codigo já existente \n";
                 }
+
+                existe = new Produto();
+                existe.Nome = txtNome.Text;
+                existe.Consultar();
+
+
+                if (produto.Id == 0 && existe.Id != 0 ||
+                        produto.Id != 0 && existe.Id != 0 && produto.Id != existe.Id)
+                {
+                    msg += "Nome já existente";
+                }
+
             }
             catch (Exception ex)
             {
@@ -380,7 +392,7 @@ namespace Ae___Controle_de_Vendas.Formulários
 
         private void maskPreco_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = Global.SomenteNumeros(e.KeyChar, (sender as TextBox).Text);
+            //.Handled = Global.SomenteNumeros(e.KeyChar, (sender as TextBox).Text);
 
         }
 

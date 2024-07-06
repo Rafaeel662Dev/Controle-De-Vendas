@@ -27,10 +27,12 @@ namespace Ae___Controle_de_Vendas.Formulários
         {
             CarregarGridUsuario();
             CarregarPermissoes();
+            CarregarEstados();
+
+            load = true;
             cboCidade.Enabled = false;
             grdDados.ReadOnly = true;  
             grdDados.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            load = true;
         }
 
         private void CarregarGridUsuario()
