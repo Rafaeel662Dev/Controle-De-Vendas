@@ -25,7 +25,6 @@ namespace Ae___Controle_de_Vendas.Formulários
 
         private void frmUsuario_Load(object sender, EventArgs e)
         {
-            CarregarEstados();
             CarregarGridUsuario();
             CarregarPermissoes();
             cboCidade.Enabled = false;

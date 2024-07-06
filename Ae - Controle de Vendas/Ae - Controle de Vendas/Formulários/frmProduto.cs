@@ -50,11 +50,35 @@ namespace Ae___Controle_de_Vendas.Formulários
 
             produto.Codigo = Convert.ToInt32(txtCodigo.Text);
             produto.Nome = txtNome.Text;
-            produto.Preco = Convert.ToDecimal(maskPreco.Text);
+            decimal precoConvertido = ConverterMoedaParaDecimal(maskPreco.Text);
+            produto.Preco = Convert.ToDecimal(precoConvertido);
             produto.CategoriaId = Convert.ToInt32(cboCategoria.SelectedValue);
 
 
         }
+
+
+        private  decimal ConverterMoedaParaDecimal(string valorMoeda)
+        {
+            // Definir a cultura para o Brasil para garantir que o formato de moeda seja reconhecido corretamente
+            CultureInfo culturaBrasileira = new CultureInfo("pt-BR");
+
+            // Remover caracteres não numéricos e converter para um formato compatível com decimal
+            string valorNumerico = valorMoeda
+                .Replace("R$", "") // Remover o símbolo da moeda, se presente
+                .Replace(".", "")  // Remover separadores de milhar
+                .Replace(".", ""); // Substituir vírgula por ponto para o separador decimal
+
+            // Converter a string para decimal utilizando a cultura brasileira
+            decimal valorDecimal;
+            if (!decimal.TryParse(valorNumerico, NumberStyles.Currency, culturaBrasileira, out valorDecimal))
+            {
+                throw new ArgumentException("Valor de moeda inválido: " + valorMoeda);
+            }
+
+            return valorDecimal;
+        }
+
 
         private void ConvertMask(MaskedTextBox mask)
         {
@@ -141,14 +165,23 @@ namespace Ae___Controle_de_Vendas.Formulários
         {
 
             string msg = string.Empty;
+
             try
             {
+                Produto existe = new Produto();
+                existe.Codigo = Convert.ToInt32(txtCodigo.Text);
+                existe.Consultar();
 
+                if (existe.Codigo != 0 && produto.Codigo != 0
+                    && existe.Codigo == produto.Codigo)
+                {
+                    msg = "Codigo já existente";
+                }
             }
             catch (Exception ex)
             {
 
-                throw;
+                MessageBox.Show(ex.Message);
             }
 
             return msg;
@@ -181,7 +214,11 @@ namespace Ae___Controle_de_Vendas.Formulários
             grdDados.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             CarregarGridCategoria();
             CarregarCategorias();
-	    if (grdDados.Columns.Count > 0)
+
+
+
+            maskPreco.Text = produto.Preco.ToString("C");
+            if (grdDados.Columns.Count > 0)
     {
         grdDados.Columns[grdDados.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
     }
@@ -210,21 +247,30 @@ namespace Ae___Controle_de_Vendas.Formulários
             try
             {
                 string campos = ValidarCampos();
+                string existe = verificarExistencia();
 
-                if (campos == string.Empty)
+
+                if (campos != string.Empty)
                 {
-
-                    if (campos != string.Empty)
-                    {
-                        MessageBox.Show(campos, "Erro de Preenchimento",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
-
-                    PreencherClasse();
-                    produto.Gravar();
-                    MessageBox.Show("Produto Adicionado/Alterado Com Sucesso!", "Cadastro Produto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(campos, "Erro de Preenchimento",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
+
+                if (existe != string.Empty) {
+
+                    MessageBox.Show(existe, "Erro de Preenchimento",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+
+
+                }
+
+
+                PreencherClasse();
+                produto.Gravar();
+                MessageBox.Show("Produto Adicionado/Alterado Com Sucesso!", "Cadastro Produto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
             catch (Exception ex)
             {
@@ -317,17 +363,6 @@ namespace Ae___Controle_de_Vendas.Formulários
             CarregarGridCategoria();
         }
 
-        
-
-        private void maskPreco_TextChanged(object sender, EventArgs e)
-        {
-            if(maskPreco.Text == string.Empty)
-            {
-                return;
-            }
-        }
-
-
         private void maskPreco_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
@@ -336,6 +371,22 @@ namespace Ae___Controle_de_Vendas.Formulários
         private void grdDados_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void maskPreco_TextChanged_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void maskPreco_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = Global.SomenteNumeros(e.KeyChar, (sender as TextBox).Text);
+
+        }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = Global.SomenteNumeros(e.KeyChar, (sender as TextBox).Text);
         }
     }
 }

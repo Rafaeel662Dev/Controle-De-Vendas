@@ -192,6 +192,7 @@
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
             this.txtCodigo.TabIndex = 8;
             this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
+            this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
             // 
             // maskPreco
             // 
@@ -200,6 +201,8 @@
             this.maskPreco.Size = new System.Drawing.Size(100, 20);
             this.maskPreco.TabIndex = 10;
             this.maskPreco.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskPreco_MaskInputRejected);
+            this.maskPreco.TextChanged += new System.EventHandler(this.maskPreco_TextChanged_1);
+            this.maskPreco.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskPreco_KeyPress);
             // 
             // cboCategoria
             // 
