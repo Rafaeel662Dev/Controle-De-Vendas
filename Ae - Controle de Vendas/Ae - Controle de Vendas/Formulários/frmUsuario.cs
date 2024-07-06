@@ -82,6 +82,7 @@ namespace Ae___Controle_de_Vendas.Formulários
             user = new Usuario();
             txtPesquisa.Text = string.Empty;
             txtNome.Text = string.Empty;
+
             txtCelular.Text = string.Empty;
             rdbMasculino.Checked = true;
             rdbFeminino.Checked = false;
