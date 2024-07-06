@@ -145,8 +145,13 @@ namespace Ae___Controle_de_Vendas.Formulários
         {
             try
             {
-              
-                grdDados.DataSource = cliente.Consultar();
+
+                DataTable dt = cliente.Consultar();
+                if (dt.Rows.Count > 0)
+                {
+                    dt = dt.AsEnumerable().Where(row => row.Field<string>("Nome") != "AVULSO").CopyToDataTable();
+                }
+                grdDados.DataSource = dt;
                 grdDados.Columns[0].Visible = false;
                 grdDados.Columns[5].Visible = false;
                 grdDados.Columns[6].Visible = false;

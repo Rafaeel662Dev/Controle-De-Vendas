@@ -73,10 +73,7 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
                 dt = acesso.Consultar(sql, parameters);
 
 
-                if (dt.Rows.Count > 0)
-                {
-                    dt = dt.AsEnumerable().Where(row => row.Field<string>("Nome") != "AVULSO").CopyToDataTable();
-                }
+               
                 if (Id != 0 || (CPF != string.Empty && dt.Rows.Count > 0))
                 {
                     Id = Convert.ToInt32(dt.Rows[0]["Id"]);
