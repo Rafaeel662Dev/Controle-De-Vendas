@@ -1,0 +1,13 @@
+DROP TABLE tblItens
+DROP TABLE tblNotaFiscal
+DROP TABLE tblVenda
+DROP TABLE TblCliente
+DROP TABLE TblFuncionario
+DROP TABLE tblProduto
+DROP TABLE tblEndereco
+DROP TABLE tblCidade
+DROP TABLE tblEstado
+DROP TABLE tblSexo
+DROP TABLE tblFormaPagamento
+DROP TABLE tblPermissao
+DROP TABLE tblCategoria

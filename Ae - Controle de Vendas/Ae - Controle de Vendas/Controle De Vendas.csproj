@@ -183,7 +183,12 @@
     <None Include="Resources\1f4b2.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Query%27s\Create Table%27s.sql" />
+    <Content Include="Query%27s\Drop Table%27s.sql" />
     <Content Include="Query%27s\GitHub.txt" />
+    <Content Include="Query%27s\Insert Cidades.sql" />
+    <Content Include="Query%27s\Insert Estado.sql" />
+    <Content Include="Query%27s\Insert Table%27s.sql" />
     <None Include="Resources\Consultar Venda - frmVenda.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
