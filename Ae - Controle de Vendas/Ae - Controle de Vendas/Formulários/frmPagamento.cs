@@ -28,10 +28,6 @@ namespace Ae___Controle_de_Vendas.Formulários
             return FormaPagamentoId;
         }
 
-        AcessoBD acesso = new AcessoBD();
-        DataTable dt = new DataTable();
-        List<SqlParameter> parameters = new List<SqlParameter>();
-        string sql = string.Empty;
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -55,9 +51,12 @@ namespace Ae___Controle_de_Vendas.Formulários
 
         }
 
-        public DataTable getFormaPagamento()
+        public static DataTable getFormaPagamento()
         {
-            parameters.Clear();
+
+            AcessoBD acesso = new AcessoBD();
+            DataTable dt = new DataTable();
+            List<SqlParameter> parameters = new List<SqlParameter>();
             try
             {
                 string sql = "SELECT Id, Descricao FROM tblFormaPagamento \n";

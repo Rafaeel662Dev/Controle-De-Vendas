@@ -2,6 +2,7 @@
 using System.Data.SqlClient;
 using System.Data;
 using System;
+using System.Security.Cryptography;
 
 namespace Ae___Controle_de_Vendas.Classes.Outros
 {
@@ -11,6 +12,7 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
         public DateTime Date { get; set; }
         public Cliente Cliente { get; set; }
         public int FormaPagamentoId { get; set; }
+        public Usuario Usuario { get; set; }
 
         AcessoBD acesso = new AcessoBD();
         DataTable dt = new DataTable();
@@ -23,6 +25,7 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
             Date = DateTime.MinValue;
             Cliente = new Cliente();
             FormaPagamentoId = 0;
+            Usuario = new Usuario();
         }
 
         public int Gravar()
@@ -51,7 +54,7 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
                 else
                 {
                     sql = "UPDATE tblVenda SET ";
-                    
+
                     sql += "ClienteId = @clienteId, ";
                     sql += "UsuarioId = @usuarioId, ";
                     sql += "FormaPagamentoId = @formaPagamentoId ";
@@ -76,13 +79,13 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
                 throw new Exception("Erro ao gravar venda: " + ex.Message);
             }
         }
-    
-public void Consultar()
+
+        public DataTable Consultar()
         {
             try
             {
                 parameters.Clear();
-                sql = "SELECT Id,ClienteId, UsuarioId, FormaPagamentoId ";
+                sql = "SELECT Id,ClienteId, FuncionarioId, FormaPagamentoId ";
                 sql += "FROM tblVenda ";
 
                 if (Id != 0)
@@ -98,13 +101,49 @@ public void Consultar()
                 {
                     Id = Convert.ToInt32(dt.Rows[0]["Id"]);
                     Cliente.Id = Convert.ToInt32(dt.Rows[0]["ClienteId"]);
+                    Usuario.Id = Convert.ToInt32(dt.Rows[0]["FuncionarioId"]);
                     FormaPagamentoId = Convert.ToInt32(dt.Rows[0]["FormaPagamentoId"]);
                 }
+
+                return dt;
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
         }
+    
+    public DataTable ConsultarInner()
+    {
+        try
+        {
+            parameters.Clear();
+            sql = "SELECT Id,ClienteId, FuncionarioId, FormaPagamentoId ";
+            sql += "FROM tblVenda ";
+
+            if (Id != 0)
+            {
+                sql += "WHERE Id = @id;";
+                parameters.Add(new SqlParameter("@id", Id));
+            }
+
+
+            dt = acesso.Consultar(sql, parameters);
+
+            if (dt.Rows.Count > 0)
+            {
+                Id = Convert.ToInt32(dt.Rows[0]["Id"]);
+                Cliente.Id = Convert.ToInt32(dt.Rows[0]["ClienteId"]);
+                Usuario.Id = Convert.ToInt32(dt.Rows[0]["FuncionarioId"]);
+                FormaPagamentoId = Convert.ToInt32(dt.Rows[0]["FormaPagamentoId"]);
+            }
+
+            return dt;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
     }
+}
 }

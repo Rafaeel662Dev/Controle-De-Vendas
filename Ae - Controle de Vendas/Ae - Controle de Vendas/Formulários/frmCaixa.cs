@@ -412,12 +412,16 @@ namespace Ae___Controle_de_Vendas.Formulários
 
                     venda = new Venda();
                     venda.Cliente = cliente;
+
                     usuario = new Usuario();
                     usuario.Id = Global.IdUsuarioLogado;
+
                     usuario.Consultar();
                     venda.FormaPagamentoId = frmPagamento.ObterFormaPagamentoId();
                     VendaId = venda.Gravar();
+
                     percorrerItens();
+
                     MessageBox.Show("A Venda foi realizada Com Sucesso!","Caixa - Amor Em Caldas", MessageBoxButtons.OK,MessageBoxIcon.Information);
                     LimparListaItens();
                 }
