@@ -196,11 +196,6 @@ namespace Ae___Controle_de_Vendas.Formulários
                 e.Handled = true;
             }
 
-            
-
-            
-
-
             if (cliente.Nome == "Avulso")
             {
                 cliente = new Cliente();
@@ -238,7 +233,6 @@ namespace Ae___Controle_de_Vendas.Formulários
                 cliente = new Cliente();
                 txtCPF.Text = string.Empty;
                 cliente.Consultar();
-
                 txtNomeCliente.Text = cliente.Nome;
                 txtCPF.Enabled = true;
                 txtCPF.Focus();
@@ -256,9 +250,6 @@ namespace Ae___Controle_de_Vendas.Formulários
             {
                 limparProduto();
             }
-
-
-
         }
 
         private void btnCalculadora_Click(object sender, EventArgs e)
@@ -339,7 +330,7 @@ namespace Ae___Controle_de_Vendas.Formulários
                 DialogResult result = MessageBox.Show("Tem certeza que deseja cancelar o item?", "Cancelamento Item", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (result == DialogResult.OK)
                 {
-                    decimal convertido = ConverterTextoParaDecimal("" + s.Cells["Total"].Value);
+                    decimal convertido = Global.ConverterDinheiroParaDecimal("" + s.Cells["Total"].Value);
                     decimal total = convertido;
 
                     if (precototal - total < 0)
@@ -359,26 +350,6 @@ namespace Ae___Controle_de_Vendas.Formulários
             else
             {
                 MessageBox.Show("Nenhum Item Foi Selecionado!", "Cancelar Item", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
-        public static decimal ConverterTextoParaDecimal(string texto)
-        {
-            // Remove caracteres não numéricos
-            string valorSemSimbolos = texto.Replace("R$", "").Trim(); // Remove o símbolo R$ e espaços em branco
-
-            // Define o formato específico para o Brasil
-            CultureInfo cultura = new CultureInfo("pt-BR");
-
-            // Converte para decimal usando a cultura específica do Brasil
-            decimal valorDecimal;
-            if (decimal.TryParse(valorSemSimbolos, NumberStyles.Currency, cultura, out valorDecimal))
-            {
-                return valorDecimal;
-            }
-            else
-            {
-                throw new ArgumentException("Texto não está no formato monetário válido.");
             }
         }
 
@@ -415,8 +386,9 @@ namespace Ae___Controle_de_Vendas.Formulários
 
                     usuario = new Usuario();
                     usuario.Id = Global.IdUsuarioLogado;
-
                     usuario.Consultar();
+
+                    venda.Preco = precototal;
                     venda.FormaPagamentoId = frmPagamento.ObterFormaPagamentoId();
                     VendaId = venda.Gravar();
 
@@ -439,10 +411,11 @@ namespace Ae___Controle_de_Vendas.Formulários
         private void LimparListaItens()
         {
             dataTable.Rows.Clear();
-            grdDados.DataSource = dataTable; // Atualiza a fonte de dados da DataGridView
-            lblValor.Text = "R$ 0,00"; // Reinicializa o valor total para zero ou conforme necessário
-            precototal = 0; // Reinicializa a variável de preço total
+            grdDados.DataSource = dataTable;
+            lblValor.Text = "R$ 0,00"; 
+            precototal = 0; 
             limparProduto();
+
             if(checkAvulso.Checked)
             {
                 checkAvulso.Checked = false;
@@ -464,10 +437,9 @@ namespace Ae___Controle_de_Vendas.Formulários
                 {
                     DataGridViewRow linha = grdDados.Rows[i];
 
-                    // Verifica se a linha não é nova (não está marcada para exclusão)
                     if (!linha.IsNewRow)
                     {
-                        // Exemplo de como obter os valores de cada célula
+                       
                         int id = Convert.ToInt32(linha.Cells["Id"].Value);
                         int categoriaId = Convert.ToInt32(linha.Cells["CategoriaId"].Value);
                         int codigo = Convert.ToInt32(linha.Cells["Codigo"].Value);
@@ -475,20 +447,18 @@ namespace Ae___Controle_de_Vendas.Formulários
                         int quantidade = Convert.ToInt32(linha.Cells["Quantidade"].Value);
                         decimal total = Convert.ToDecimal(linha.Cells["Total"].Value);
 
-                        // Criar um novo item e configurar os atributos
+                       
                         Item novoItem = new Item
                         {
                             Quantidade = quantidade,
-                            Preco = total, // Você pode precisar ajustar isso conforme necessário
+                            Preco = total,
                             VendaId = VendaId,
                             ProdutoId = id
                         };
 
-                        // Gravar o item no banco de dados
+               
                         novoItem.Gravar();
 
-                        // Aqui você pode usar os dados obtidos para outros fins, se necessário
-                        // venda.AdicionarItem(id, categoriaId, codigo, nome, preco, quantidade, categoria, total);
                     }
                 }
             }

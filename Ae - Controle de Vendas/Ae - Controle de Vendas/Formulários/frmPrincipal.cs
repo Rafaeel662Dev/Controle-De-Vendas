@@ -74,6 +74,7 @@ namespace Ae___Controle_de_Vendas.Formulários
                 if (filho.Name == form.Name)
                 {
                     filho.Activate();
+                    filho.StartPosition = FormStartPosition.CenterScreen;
                     return;
                 }
             }

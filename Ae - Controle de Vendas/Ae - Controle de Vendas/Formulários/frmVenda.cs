@@ -24,6 +24,8 @@ namespace Ae___Controle_de_Vendas.Formulários
         DataTable formaPagamento = frmPagamento.getFormaPagamento();
         Item item = new Item();
         NotaFiscal NotaFiscal = new NotaFiscal();
+        Produto produto = new Produto();
+        DataTable dt = new DataTable();
 
         private bool load = false;
 
@@ -47,12 +49,8 @@ namespace Ae___Controle_de_Vendas.Formulários
 
         private void CarregarGridVenda()
         {
-            DataTable dt = new DataTable();
+            dt = new DataTable();
             dt = v.Consultar();
-
-
-            
-
 
             dt.Columns.Add("N. Venda", typeof(int));
             dt.Columns.Add("Cliente", typeof(string));
@@ -89,8 +87,54 @@ namespace Ae___Controle_de_Vendas.Formulários
             grdVenda.DataSource = dt;
         }
 
+        private DataGridViewRow ObterLinhaSelecionada()
+        {
+            if (grdVenda.SelectedRows.Count > 0)
+            {
+                return grdVenda.SelectedRows[0];
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         private void CarregarGridItensVenda()
         {
+            DataGridViewRow s = ObterLinhaSelecionada();
+            item = new Item();
+            item.VendaId = Convert.ToInt32(s.Cells["N. Venda"].Value);
+           
+
+
+
+            DataTable dt = item.ConsultarItens();
+            dt.Columns.Add("Produto", typeof(string));
+            dt.Columns.Add("Quant.", typeof(int));
+            dt.Columns.Add("Valor", typeof(decimal));
+
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                produto = new Produto();
+                produto.Id = Convert.ToInt32(dt.Rows[i]["ProdutoId"].ToString());
+                produto.Consultar();
+                dt.Rows[i]["Produto"] = produto.Nome;
+                dt.Rows[i]["Quant."] = dt.Rows[i]["Quantidade"];
+                dt.Rows[i]["Valor"] = dt.Rows[i]["Preco"];
+
+            }
+
+            grdItems.DataSource = dt;
+            grdItems.Columns[0].Visible = false;
+            grdItems.Columns[1].Visible = false;
+            grdItems.Columns[2].Visible = false;
+            grdItems.Columns[3].Visible = false;
+            grdItems.Columns[4].Visible = false;
+
+
+            grdItems.Columns[5].Width = 200;
+            grdItems.Columns[6].Width = 50;
 
         }
 
@@ -108,6 +152,27 @@ namespace Ae___Controle_de_Vendas.Formulários
         private void txtPesquisa_KeyPress(object sender, KeyPressEventArgs e)
         {
 
+        }
+
+        private void grdVenda_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CarregarGridItensVenda();
+        }
+
+        private void grdItems_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if ((e.ColumnIndex == 4 || e.ColumnIndex == 7) && e.Value != null && e.Value != DBNull.Value)
+            {
+                // Tenta converter o valor da célula para decimal
+                if (decimal.TryParse(e.Value.ToString(), out decimal valor))
+                {
+                    // Formata o valor para moeda brasileira
+                    e.Value = valor.ToString("C");
+
+                    // Indica que a formatação foi aplicada
+                    e.FormattingApplied = true;
+                }
+            }
         }
     }
 }

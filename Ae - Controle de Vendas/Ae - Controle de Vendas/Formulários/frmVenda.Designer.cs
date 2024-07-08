@@ -31,7 +31,9 @@
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.lblPesquisa = new System.Windows.Forms.Label();
             this.grdVenda = new System.Windows.Forms.DataGridView();
+            this.grdItems = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.grdVenda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdItems)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPesquisa
@@ -62,21 +64,42 @@
             this.grdVenda.Location = new System.Drawing.Point(12, 98);
             this.grdVenda.Name = "grdVenda";
             this.grdVenda.ReadOnly = true;
+            this.grdVenda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdVenda.Size = new System.Drawing.Size(776, 150);
             this.grdVenda.TabIndex = 2;
+            this.grdVenda.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdVenda_CellClick);
+            // 
+            // grdItems
+            // 
+            this.grdItems.AllowUserToAddRows = false;
+            this.grdItems.AllowUserToDeleteRows = false;
+            this.grdItems.AllowUserToResizeColumns = false;
+            this.grdItems.AllowUserToResizeRows = false;
+            this.grdItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdItems.Location = new System.Drawing.Point(174, 254);
+            this.grdItems.Name = "grdItems";
+            this.grdItems.ReadOnly = true;
+            this.grdItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdItems.Size = new System.Drawing.Size(458, 150);
+            this.grdItems.TabIndex = 3;
+            this.grdItems.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.grdItems_CellFormatting);
             // 
             // frmVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.grdItems);
             this.Controls.Add(this.grdVenda);
             this.Controls.Add(this.lblPesquisa);
             this.Controls.Add(this.txtPesquisa);
             this.Name = "frmVenda";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmVenda";
             this.Load += new System.EventHandler(this.frmVenda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdVenda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdItems)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -87,5 +110,6 @@
         private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.Label lblPesquisa;
         private System.Windows.Forms.DataGridView grdVenda;
+        private System.Windows.Forms.DataGridView grdItems;
     }
 }

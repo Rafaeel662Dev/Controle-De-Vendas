@@ -69,22 +69,68 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
             }
         }
 
-        public void Consultar()
+
+        public DataTable ConsultarItens()
         {
+            dt = new DataTable();
+
             try
             {
+                dt.Clear();
                 parameters.Clear();
                 sql = "SELECT Id, Quantidade, Preco, VendaId, ProdutoId ";
-                sql += "FROM tblItem ";
+                sql += "FROM tblItens ";
 
                 if (Id != 0)
                 {
                     sql += "WHERE Id = @id;";
                     parameters.Add(new SqlParameter("@id", Id));
                 }
+                else
+                {
+                    if (VendaId != 0)
+                    {
+                        sql += "WHERE VendaId = @vendaId";
+                        parameters.Add(new SqlParameter("@vendaId", VendaId));
+                    }
+                }
 
                 dt = acesso.Consultar(sql, parameters);
 
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public DataTable Consultar()
+        {
+            try
+            {
+                dt.Clear();
+                parameters.Clear();
+                sql = "SELECT Id, Quantidade, Preco, VendaId, ProdutoId ";
+                sql += "FROM tblItens ";
+
+                if (Id != 0)
+                {
+                    sql += "WHERE Id = @id;";
+                    parameters.Add(new SqlParameter("@id", Id));
+                }
+                else
+                {
+                    if (VendaId != 0)
+                    {
+                        sql += "WHERE VendaId = @vendaId";
+                        parameters.Add(new SqlParameter("@vendaId", VendaId));
+                    }
+                }
+
+                dt = acesso.Consultar(sql, parameters);
+
+                
                 if (dt.Rows.Count > 0)
                 {
                     Id = Convert.ToInt32(dt.Rows[0]["Id"]);
@@ -93,6 +139,8 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
                     VendaId = Convert.ToInt32(dt.Rows[0]["VendaId"]);
                     ProdutoId = Convert.ToInt32(dt.Rows[0]["ProdutoId"]);
                 }
+
+                return dt;
             }
             catch (Exception ex)
             {

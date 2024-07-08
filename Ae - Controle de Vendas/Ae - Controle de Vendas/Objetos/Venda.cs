@@ -13,6 +13,7 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
         public Cliente Cliente { get; set; }
         public int FormaPagamentoId { get; set; }
         public Usuario Usuario { get; set; }
+        public decimal Preco { get; set; }
 
         AcessoBD acesso = new AcessoBD();
         DataTable dt = new DataTable();
@@ -25,6 +26,7 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
             Date = DateTime.MinValue;
             Cliente = new Cliente();
             FormaPagamentoId = 0;
+            Preco = 0;
             Usuario = new Usuario();
         }
 
@@ -36,20 +38,18 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
 
                 if (Id == 0)
                 {
-                    sql = "INSERT INTO tblVenda (ClienteId, FuncionarioId, FormaPagamentoId) ";
-                    sql += "VALUES (@clienteId, @usuarioId, @formaPagamentoId); SELECT SCOPE_IDENTITY();";
+                    sql = "INSERT INTO tblVenda (ClienteId, FuncionarioId, FormaPagamentoId,PRECO) ";
+                    sql += "VALUES (@clienteId, @usuarioId, @formaPagamentoId,@PRECO); SELECT SCOPE_IDENTITY();";
 
-                    // Formatar a data conforme necessário para o SQL Server
-                    //string dataFormatada = data.ToString("yyyy-MM-dd HH:mm:ss.fff");
-                    string dataHoraAtual = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
-
+                    
                     parameters.Add(new SqlParameter("@clienteId", Cliente.Id));
                     parameters.Add(new SqlParameter("@usuarioId", Global.IdUsuarioLogado));
                     parameters.Add(new SqlParameter("@formaPagamentoId", FormaPagamentoId));
+                    parameters.Add(new SqlParameter("@PRECO", Preco));
 
-                    Id = acesso.Executar(parameters, sql); // Executa o INSERT e retorna o ID inserido
+                    Id = acesso.Executar(parameters, sql); 
 
-                    return Id; // Retorna o ID inserido
+                    return Id; 
                 }
                 else
                 {
@@ -57,25 +57,24 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
 
                     sql += "ClienteId = @clienteId, ";
                     sql += "UsuarioId = @usuarioId, ";
-                    sql += "FormaPagamentoId = @formaPagamentoId ";
+                    sql += "FormaPagamentoId = @formaPagamentoId, ";
+                    sql += "PRECO = @preco ";
                     sql += "WHERE Id = @id;";
-
-                    // Formatar a data conforme necessário para o SQL Server
-                    string dataHoraAtual = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
                     parameters.Add(new SqlParameter("@id", Id));
                     parameters.Add(new SqlParameter("@clienteId", Cliente.Id));
                     parameters.Add(new SqlParameter("@usuarioId", Global.IdUsuarioLogado));
                     parameters.Add(new SqlParameter("@formaPagamentoId", FormaPagamentoId));
+                    parameters.Add(new SqlParameter("@preco", Preco));
 
-                    acesso.Executar(sql, parameters); // Executa o UPDATE
+                    acesso.Executar(sql, parameters); 
 
-                    return Id; // Retorna o ID atualizado
+                    return Id; 
                 }
             }
             catch (Exception ex)
             {
-                // Aqui você pode adicionar um tratamento mais específico para a exceção, se necessário
+                
                 throw new Exception("Erro ao gravar venda: " + ex.Message);
             }
         }
@@ -85,7 +84,7 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
             try
             {
                 parameters.Clear();
-                sql = "SELECT Id,ClienteId, FuncionarioId, FormaPagamentoId ";
+                sql = "SELECT Id,ClienteId, FuncionarioId, FormaPagamentoId,PRECO ";
                 sql += "FROM tblVenda ";
 
                 if (Id != 0)
@@ -103,6 +102,7 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
                     Cliente.Id = Convert.ToInt32(dt.Rows[0]["ClienteId"]);
                     Usuario.Id = Convert.ToInt32(dt.Rows[0]["FuncionarioId"]);
                     FormaPagamentoId = Convert.ToInt32(dt.Rows[0]["FormaPagamentoId"]);
+                    Preco = Convert.ToDecimal(dt.Rows[0]["PRECO"]);
                 }
 
                 return dt;

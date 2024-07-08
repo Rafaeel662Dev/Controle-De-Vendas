@@ -101,11 +101,11 @@ VALUES
 
 
 
-INSERT INTO tblVenda (ClienteId, FuncionarioId, FormaPagamentoId)
+INSERT INTO tblVenda (ClienteId, FuncionarioId, FormaPagamentoId,Preco)
 VALUES 
-(1, 1, 2),
-(2, 2, 3),	
-(3, 3, 1);
+(1, 1, 2,0),
+(2, 2, 3,3),	
+(3, 3, 1,8);
 
 
 

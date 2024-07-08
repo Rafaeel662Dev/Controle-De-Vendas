@@ -10,6 +10,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Globalization;
 
 
 namespace Ae___Controle_de_Vendas.Classes.Outros
@@ -79,7 +80,25 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
             }
         }
 
+        public static decimal ConverterDinheiroParaDecimal(string texto)
+        {
+            // Remove caracteres não numéricos
+            string valorSemSimbolos = texto.Replace("R$", "").Trim(); // Remove o símbolo R$ e espaços em branco
 
+            // Define o formato específico para o Brasil
+            CultureInfo cultura = new CultureInfo("pt-BR");
+
+            // Converte para decimal usando a cultura específica do Brasil
+            decimal valorDecimal;
+            if (decimal.TryParse(valorSemSimbolos, NumberStyles.Currency, cultura, out valorDecimal))
+            {
+                return valorDecimal;
+            }
+            else
+            {
+                throw new ArgumentException("Texto não está no formato monetário válido.");
+            }
+        }
         public static int ConsultarEstado(int cidadeId)
         {
             try

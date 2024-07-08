@@ -79,9 +79,12 @@ FuncionarioId INT FOREIGN KEY (FuncionarioId) REFERENCES tblFuncionario);
 CREATE TABLE tblVenda
 (
 Id INT PRIMARY KEY IDENTITY,
+Preco MONEY,
+Estado VARCHAR(30);
 ClienteId INT FOREIGN KEY (ClienteId) REFERENCES tblCliente,
 FuncionarioId INT FOREIGN KEY (FuncionarioId) REFERENCES tblFuncionario,
 FormaPagamentoId INT FOREIGN KEY (FormaPagamentoId) REFERENCES tblFormaPagamento);
+
 
 CREATE TABLE tblNotaFiscal
 (
@@ -94,7 +97,8 @@ VendaId INT FOREIGN KEY (VendaId) REFERENCES tblVenda)
 CREATE TABLE tblItens
 (
 Id INT PRIMARY KEY IDENTITY,
-Quantidade INT,
 Preco MONEY,
+Quantidade INT,
 VendaId INT FOREIGN KEY (VendaId) REFERENCES tblVenda,
 ProdutoId INT FOREIGN KEY (ProdutoId) REFERENCES tblProduto);
+
