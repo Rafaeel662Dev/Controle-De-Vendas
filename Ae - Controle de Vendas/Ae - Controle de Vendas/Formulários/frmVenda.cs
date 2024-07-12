@@ -56,6 +56,7 @@ namespace Ae___Controle_de_Vendas.Formulários
             dt.Columns.Add("Cliente", typeof(string));
             dt.Columns.Add("Funcionario", typeof(string));
             dt.Columns.Add("F. Pagamento", typeof(string));
+            dt.Columns.Add("Preco Venda", typeof(string));
             dt.Columns.Add("Nota", typeof(string));
 
             for (int i =0; i < dt.Rows.Count; i++)
@@ -74,6 +75,7 @@ namespace Ae___Controle_de_Vendas.Formulários
                 dt.Rows[i]["Cliente"] = cliente.Nome;
                 dt.Rows[i]["Funcionario"] = usuario.Nome;
                 dt.Rows[i]["F. Pagamento"] = "Ajustar!";
+                dt.Rows[i]["Preco Venda"] = dt.Rows[i]["PRECO"]; 
 
             }
 
@@ -81,6 +83,7 @@ namespace Ae___Controle_de_Vendas.Formulários
             dt.Columns.Remove("ClienteId");
             dt.Columns.Remove("FuncionarioId");
             dt.Columns.Remove("FormaPagamentoId");
+            dt.Columns.Remove("PRECO");
 
             //dt.Rows[0]["NomeCliente"] = cliente.Nome;
 
@@ -122,6 +125,7 @@ namespace Ae___Controle_de_Vendas.Formulários
                 dt.Rows[i]["Produto"] = produto.Nome;
                 dt.Rows[i]["Quant."] = dt.Rows[i]["Quantidade"];
                 dt.Rows[i]["Valor"] = dt.Rows[i]["Preco"];
+
 
             }
 
@@ -173,6 +177,20 @@ namespace Ae___Controle_de_Vendas.Formulários
                     e.FormattingApplied = true;
                 }
             }
+        }
+
+        private void grdVenda_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            
+            if (e.ColumnIndex == 4 && e.Value != DBNull.Value)
+            {
+                if(decimal.TryParse(e.Value.ToString(), out decimal valor))
+                {
+                    e.Value = valor.ToString("C");
+                    e.FormattingApplied = true;
+                }
+            }
+
         }
     }
 }
