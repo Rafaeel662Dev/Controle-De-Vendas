@@ -31,17 +31,36 @@ namespace Ae___Controle_de_Vendas.Formulários
 
         private void frmVenda_Load(object sender, EventArgs e)
         {
-          
 
-            CarregarGridVenda();
+
+            LimparCampos();
+            CarregarCategorias();
             grdVenda.Columns[0].Width = 90;
             grdVenda.Columns[1].Width = 150;
             grdVenda.Columns[2].Width = 150;
             load = true;
+
         }
 
         private void PreencherFormulário()
         {
+            v = new Venda();
+            DataGridViewRow s = ObterLinhaSelecionada();
+            v.Id = Convert.ToInt32(s.Cells["N. Venda"].Value);
+            v.Consultar();
+            
+
+            try
+            {
+                cboStatus.SelectedValue = v.StatusId;
+                txtPesquisa.Text = "" + v.Id;
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
 
         }
 
@@ -49,9 +68,7 @@ namespace Ae___Controle_de_Vendas.Formulários
 
         private void CarregarGridVenda()
         {
-            dt = new DataTable();
             dt = v.Consultar();
-
             dt.Columns.Add("N. Venda", typeof(int));
             dt.Columns.Add("Cliente", typeof(string));
             dt.Columns.Add("Funcionario", typeof(string));
@@ -59,7 +76,7 @@ namespace Ae___Controle_de_Vendas.Formulários
             dt.Columns.Add("Preco Venda", typeof(string));
             dt.Columns.Add("Nota", typeof(string));
 
-            for (int i =0; i < dt.Rows.Count; i++)
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
                 cliente = new Cliente();
                 cliente.Id = Convert.ToInt32(dt.Rows[i]["ClienteId"].ToString());
@@ -69,10 +86,16 @@ namespace Ae___Controle_de_Vendas.Formulários
                 usuario.Id = Convert.ToInt32(dt.Rows[i]["FuncionarioId"].ToString());
                 usuario.Consultar();
 
-                
+
 
                 dt.Rows[i]["N. Venda"] = dt.Rows[i]["Id"];
-                dt.Rows[i]["Cliente"] = cliente.Nome;
+
+                if (cliente.Nome != "AVULSO") {
+                    dt.Rows[i]["Cliente"] = cliente.Nome;
+                } else
+                {
+                    dt.Rows[i]["Cliente"] = "-";
+                }
                 dt.Rows[i]["Funcionario"] = usuario.Nome;
                 dt.Rows[i]["F. Pagamento"] = "Ajustar!";
                 dt.Rows[i]["Preco Venda"] = dt.Rows[i]["PRECO"]; 
@@ -84,8 +107,11 @@ namespace Ae___Controle_de_Vendas.Formulários
             dt.Columns.Remove("FuncionarioId");
             dt.Columns.Remove("FormaPagamentoId");
             dt.Columns.Remove("PRECO");
+            dt.Columns.Remove("StatusVendaId");
 
             //dt.Rows[0]["NomeCliente"] = cliente.Nome;
+
+
 
             grdVenda.DataSource = dt;
         }
@@ -143,9 +169,13 @@ namespace Ae___Controle_de_Vendas.Formulários
         }
 
 
-        private void LimparCampos()
-        {
-
+        private void LimparCampos() {
+            v = new Venda();
+            CarregarGridVenda();
+            CarregarGridItensVenda();
+            grdItems.DataSource = null;
+            txtPesquisa.Text = string.Empty;
+            cboStatus.SelectedIndex = -1;
         }
 
         private void txtPesquisa_TextChanged(object sender, EventArgs e)
@@ -160,6 +190,7 @@ namespace Ae___Controle_de_Vendas.Formulários
 
         private void grdVenda_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            PreencherFormulário();
             CarregarGridItensVenda();
         }
 
@@ -190,6 +221,85 @@ namespace Ae___Controle_de_Vendas.Formulários
                     e.FormattingApplied = true;
                 }
             }
+
+        }
+
+        private void cboStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+
+        private void CarregarCategorias()
+        {
+            try
+            {
+
+
+                cboStatus.DataSource = v.getStatusVenda();
+
+
+                cboStatus.DisplayMember = "Descricao";
+                cboStatus.ValueMember = "Id";
+                cboStatus.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao carregar os status: " + ex.Message);
+            }
+        }
+
+        public string validarPreenchimento()
+        {
+            string error = string.Empty;
+
+            if(v.Id == 0)
+            {
+                error = "Nenhuma Linha de Venda Foi Selecionada! \n";
+            }
+
+            if(cboStatus.SelectedIndex == -1)
+            {
+                error += "Campo de Status Da Venda Não Está Preenchimento";
+            }
+
+
+            return error;
+        }
+
+        public void gravar()
+        {
+            try
+            {
+                v.alterarStatusVenda(Convert.ToInt32(cboStatus.SelectedValue));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            string msgError = validarPreenchimento();
+            if (msgError != string.Empty)
+            {
+                MessageBox.Show(msgError, "Preenchimento", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+
+            gravar();
+                MessageBox.Show("Alteração na Venda Realida Com Sucesso!", "Alteração de Venda", MessageBoxButtons.OK, MessageBoxIcon.None);
+
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            LimparCampos();
+        }
+
+        private void lblPesquisa_Click(object sender, EventArgs e)
+        {
 
         }
     }

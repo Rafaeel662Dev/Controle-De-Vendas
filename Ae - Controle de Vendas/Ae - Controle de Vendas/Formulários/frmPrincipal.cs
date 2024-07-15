@@ -211,14 +211,12 @@ namespace Ae___Controle_de_Vendas.Formulários
             Close();
         }
 
-        private void mnuVendas_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void mnuVenda_Click(object sender, EventArgs e)
         {
              AbrirForm(new frmVenda());
         }
+
     }
 }

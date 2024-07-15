@@ -376,6 +376,11 @@ namespace Ae___Controle_de_Vendas.Formulários
         {
             frmPagamento f = new frmPagamento();
 
+            if (grdDados.RowCount == 0) {
+                MessageBox.Show("A Venda Não Contém Nenhum Item");
+                return;
+            }
+
             if (f.ShowDialog() == DialogResult.OK)
             {
                 try
@@ -390,11 +395,12 @@ namespace Ae___Controle_de_Vendas.Formulários
 
                     venda.Preco = precototal;
                     venda.FormaPagamentoId = frmPagamento.ObterFormaPagamentoId();
+                    venda.StatusId = 3;
                     VendaId = venda.Gravar();
 
                     percorrerItens();
 
-                    MessageBox.Show("A Venda foi realizada Com Sucesso!","Caixa - Amor Em Caldas", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show("Venda Realizada!" + " \n Codigo: " + venda.Id,"Caixa - Amor Em Caldas", MessageBoxButtons.OK,MessageBoxIcon.Information);
                     LimparListaItens();
                 }
                 catch (Exception ex)

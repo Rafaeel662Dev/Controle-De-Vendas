@@ -33,14 +33,16 @@
             this.grdVenda = new System.Windows.Forms.DataGridView();
             this.grdItems = new System.Windows.Forms.DataGridView();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.cboStatus = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdVenda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdItems)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPesquisa
             // 
-            this.txtPesquisa.Location = new System.Drawing.Point(483, 184);
+            this.txtPesquisa.Location = new System.Drawing.Point(539, 207);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(100, 20);
             this.txtPesquisa.TabIndex = 0;
@@ -50,11 +52,12 @@
             // lblPesquisa
             // 
             this.lblPesquisa.AutoSize = true;
-            this.lblPesquisa.Location = new System.Drawing.Point(502, 168);
+            this.lblPesquisa.Location = new System.Drawing.Point(549, 191);
             this.lblPesquisa.Name = "lblPesquisa";
-            this.lblPesquisa.Size = new System.Drawing.Size(56, 13);
+            this.lblPesquisa.Size = new System.Drawing.Size(78, 13);
             this.lblPesquisa.TabIndex = 1;
-            this.lblPesquisa.Text = "Pesquisar:";
+            this.lblPesquisa.Text = "Numero Venda";
+            this.lblPesquisa.Click += new System.EventHandler(this.lblPesquisa_Click);
             // 
             // grdVenda
             // 
@@ -89,28 +92,50 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(483, 247);
+            this.btnLimpar.Location = new System.Drawing.Point(617, 295);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpar.TabIndex = 5;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
-            // button1
+            // btnSalvar
             // 
-            this.button1.Location = new System.Drawing.Point(643, 247);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Limpar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSalvar.Location = new System.Drawing.Point(480, 295);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.TabIndex = 6;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(549, 240);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(74, 13);
+            this.lblStatus.TabIndex = 8;
+            this.lblStatus.Text = "Status Venda:";
+            // 
+            // cboStatus
+            // 
+            this.cboStatus.FormattingEnabled = true;
+            this.cboStatus.Location = new System.Drawing.Point(528, 256);
+            this.cboStatus.Name = "cboStatus";
+            this.cboStatus.Size = new System.Drawing.Size(121, 21);
+            this.cboStatus.TabIndex = 9;
+            this.cboStatus.SelectedIndexChanged += new System.EventHandler(this.cboStatus_SelectedIndexChanged);
             // 
             // frmVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(721, 323);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cboStatus);
+            this.Controls.Add(this.lblStatus);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.grdItems);
             this.Controls.Add(this.grdVenda);
@@ -119,7 +144,7 @@
             this.Name = "frmVenda";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmVenda";
+            this.Text = "Gerenciar Vendas";
             this.Load += new System.EventHandler(this.frmVenda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdVenda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdItems)).EndInit();
@@ -135,6 +160,8 @@
         private System.Windows.Forms.DataGridView grdVenda;
         private System.Windows.Forms.DataGridView grdItems;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.ComboBox cboStatus;
     }
 }

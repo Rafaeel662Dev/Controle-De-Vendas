@@ -76,14 +76,21 @@ SexoId INT FOREIGN KEY (SexoId) REFERENCES tblSexo,
 EnderecoId INT FOREIGN KEY (EnderecoId) REFERENCES tblEndereco,
 FuncionarioId INT FOREIGN KEY (FuncionarioId) REFERENCES tblFuncionario);
 
+CREATE TABLE tblStatusVenda(
+	Id int PRIMARY key IDENTITY,
+	Descricao VARCHAR(30),
+)
+
 CREATE TABLE tblVenda
 (
 Id INT PRIMARY KEY IDENTITY,
 Preco MONEY,
-Estado VARCHAR(30);
 ClienteId INT FOREIGN KEY (ClienteId) REFERENCES tblCliente,
 FuncionarioId INT FOREIGN KEY (FuncionarioId) REFERENCES tblFuncionario,
-FormaPagamentoId INT FOREIGN KEY (FormaPagamentoId) REFERENCES tblFormaPagamento);
+FormaPagamentoId INT FOREIGN KEY (FormaPagamentoId) REFERENCES tblFormaPagamento,
+StatusVendaId INT FOREIGN KEY (StatusVendaId) REFERENCES tblStatusVenda);
+
+
 
 
 CREATE TABLE tblNotaFiscal

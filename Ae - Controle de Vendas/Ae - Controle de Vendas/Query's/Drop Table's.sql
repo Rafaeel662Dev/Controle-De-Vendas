@@ -11,3 +11,4 @@ DROP TABLE tblSexo
 DROP TABLE tblFormaPagamento
 DROP TABLE tblPermissao
 DROP TABLE tblCategoria
+DROP TABLE tblStatusVenda

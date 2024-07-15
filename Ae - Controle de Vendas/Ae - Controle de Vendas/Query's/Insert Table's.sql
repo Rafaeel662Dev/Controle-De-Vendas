@@ -1,16 +1,17 @@
-INSERT INTO tblCategoria (Descricao) VALUES ('Bolo');
-INSERT INTO tblCategoria (Descricao) VALUES ('Torta');
-INSERT INTO tblCategoria (Descricao) VALUES ('Sobremesa');
-INSERT INTO tblCategoria (Descricao) VALUES ('Doces');
-INSERT INTO tblCategoria (Descricao) VALUES ('Outros');
+INSERT INTO tblCategoria (Descricao) VALUES
+('Bolo'),
+('Torta'),
+('Sobremesa'),
+('Doces'),
+('Outros');
 
 
 
-
-INSERT INTO tblPermissao (Descricao) VALUES ('Administrador');
-INSERT INTO tblPermissao (Descricao) VALUES ('Fiscalização');
-INSERT INTO tblPermissao (Descricao) VALUES ('Membro');
-
+INSERT INTO tblPermissao (Descricao)
+VALUES 
+('Administrador'),
+('Fiscal'),
+('Operador');
 
 
 INSERT INTO tblFormaPagamento (Descricao)
@@ -22,11 +23,16 @@ VALUES
 
 
 
-INSERT INTO tblSexo (Descricao) VALUES ('Masculino');
-INSERT INTO tblSexo (Descricao) VALUES ('Feminino');
+INSERT INTO tblSexo (Descricao) 
+VALUES 
+('Masculino'),
+('Feminino');
 
-
-
+INSERT INTO TblStatusVenda (Descricao)
+VALUES
+('Realizada'),
+('Cancelada'),
+('Em Análise');
 
 INSERT INTO tblEndereco (Endereco, Numero, Complemento, CEP, Bairro, CidadeId)
 VALUES 
@@ -63,28 +69,19 @@ VALUES
 (2024010219, 'Brigadeirão', 20.00, 4),
 (2024010220, 'Torta Holandesa', 45.00, 2),
 (10, 'Pé de Moleque', 05.00, 4),
-(11, 'Maria Mole', 45.00, 4),
+(11, 'Maria Mole', 2.40, 4),
 (12, 'Pudim de Leite', 8.97, 5);
 
 
 
-
-
-
 INSERT INTO tblFuncionario (Nome, Email, Telefone, CPF, Usuario, Senha, Ativo, SexoId,EnderecoId, PermissaoId)
-
 VALUES
-    ('Livia Rosa Camargo', 'livia@pedaco.com', '11945261215', '10298532077', 'livia.1515', ' ', 1,1, 1, 1),
-    ('Silvana Silmara Silva', 'silvanass@pedaco.com', '11938455091', '27235546000', 'silvana.3578', ' ', 1, 1 , 3, 1),
-    ('Carlos Alberto Pacheco', 'carlosap@pedaco.com', '11951610755', '43726303014','pacheco.8799', '', 1, 2, 2, 2),
-    ('Rafael', 'rafael@pedaco.com', '11951610755', '11111111111','rafael.amoremcaldas','4c29f94d61f96dde64a65202a6de6700',1, 2, 2, 1),
-    ('Livia', 'livia@pedaco.com', '11951610755', '22222222222','livia.amoremcaldas', '4c29f94d61f96dde64a65202a6de6700', 1,2, 2, 3),
-    ('Fernando', 'fernado@pedaco.com', '11951610755', '33333333333','fernando.amoremcaldas', '4c29f94d61f96dde64a65202a6de6700',1, 2, 2, 2);
-
-
-	
-	
-
+    ('Livia Rosa Camargo', 'livia@pedaco.com', '11945261215', '10298532077', 'livia.1515', '4c29f94d61f96dde64a65202a6de6700', 1,1, 1, 1),
+    ('Silvana Silmara Silva', 'silvanass@pedaco.com', '11938455091', '27235546000', 'silvana.3578', '4c29f94d61f96dde64a65202a6de6700', 1, 1 , 3, 1),
+    ('Carlos Alberto Pacheco', 'carlosap@pedaco.com', '11951610755', '43726303014','pacheco.8799', '4c29f94d61f96dde64a65202a6de6700', 1, 2, 2, 2),
+    ('Rafael Amor', 'rafael@pedaco.com', '11951610755', '23341220097','rafael.amoremcaldas','4c29f94d61f96dde64a65202a6de6700',1, 2, 2, 1),
+    ('Livia Rosa', 'livia@pedaco.com', '11951610755', '29340962460','livia.amoremcaldas', '4c29f94d61f96dde64a65202a6de6700', 1,2, 2, 3),
+    ('Fernando Carvalho', 'fernado@pedaco.com', '11951610755', '98898533888','fernando.amoremcaldas', '4c29f94d61f96dde64a65202a6de6700',1, 2, 2, 2);
 
 
 
@@ -93,29 +90,20 @@ VALUES
     ('Pedro Henrique Carvalho', '10156103079', '13992953299', 'pedro.henrique@gmail.com', 2, 1, 1),
     ('Luana Silva', '76433128009', '11987800617', 'luanasila@yahoo.com.br', 1, 3, 1),
     ('Clara Maria Mendoça', '24164350008', '11938973314', 'claramaria.mendoca@hotmail.com', 1, 3, 1),
-    ('AVULSO', '00000000000', NULL, NULL, 1, 3, 1);
+    ('AVULSO', '00000000000', '-','-', 1, 3, 1);
 
 	
 
-
-
-
-
-INSERT INTO tblVenda (ClienteId, FuncionarioId, FormaPagamentoId,Preco)
+INSERT INTO tblVenda (ClienteId, FuncionarioId, FormaPagamentoId,Preco,StatusVendaId)
 VALUES 
-(1, 1, 2,0),
-(2, 2, 3,3),	
-(3, 3, 1,8);
+(1, 1, 2,0,1),
+(2, 2, 3,3,2),	
+(3, 3, 1,8,3);
 
-
-
-INSERT INTO tblNotaFiscal (Numero, CPF, VendaId)
-VALUES 
-(353528,'11111111111', 1),
-(353529,'11111111111', 2),
-(353538,'11111111111', 3);
-
-
+INSERT INTO tblNotaFiscal (Numero, CPF, VendaId) VALUES
+(1, '23341220097', 1),
+(2, '29340962460', 2),
+(3, '46669537794', 3);
 
 
 INSERT INTO tblItens (Quantidade, Preco, VendaId, ProdutoId)
