@@ -47,6 +47,7 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
         List<SqlParameter> parameters = new List<SqlParameter>();
         string sql = string.Empty;
 
+
         public DataTable Consultar()
         {
             try

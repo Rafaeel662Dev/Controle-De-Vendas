@@ -1,6 +1,6 @@
 ﻿namespace Ae___Controle_de_Vendas.Formulários
 {
-    partial class frmVenda
+    partial class frmExibirVendas
     {
         /// <summary>
         /// Required designer variable.
@@ -57,7 +57,6 @@
             this.lblPesquisa.Size = new System.Drawing.Size(78, 13);
             this.lblPesquisa.TabIndex = 1;
             this.lblPesquisa.Text = "Numero Venda";
-            this.lblPesquisa.Click += new System.EventHandler(this.lblPesquisa_Click);
             // 
             // grdVenda
             // 
@@ -128,7 +127,7 @@
             this.cboStatus.TabIndex = 9;
             this.cboStatus.SelectedIndexChanged += new System.EventHandler(this.cboStatus_SelectedIndexChanged);
             // 
-            // frmVenda
+            // frmExibirVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -141,7 +140,7 @@
             this.Controls.Add(this.grdVenda);
             this.Controls.Add(this.lblPesquisa);
             this.Controls.Add(this.txtPesquisa);
-            this.Name = "frmVenda";
+            this.Name = "frmExibirVendas";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerenciar Vendas";

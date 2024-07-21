@@ -69,6 +69,29 @@ namespace Ae___Controle_de_Vendas.Formulários
         }
 
 
+        public static string getFormaPagamento(int id)
+        {
+            string form = string.Empty;
+
+            AcessoBD acesso = new AcessoBD();
+            DataTable dt = new DataTable();
+            List<SqlParameter> parameters2 = new List<SqlParameter>();
+            string sql = "SELECT Id,Descricao FROM tblFormaPagamento where id = @id";
+            parameters2.Add(new SqlParameter("@id",id));
+
+
+            dt = acesso.Consultar(sql, parameters2);
+
+            if(id != 0 && dt.Rows.Count > 0)
+            {
+                form = dt.Rows[0]["Descricao"].ToString();
+            }
+
+            return form;
+
+        }
+
+
         private void CarregarCategorias()
         {
             try

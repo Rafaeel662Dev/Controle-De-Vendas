@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Ae___Controle_de_Vendas.Formulários
 {
-    public partial class frmVenda : Form
+    public partial class frmExibirVendas : Form
     {
-        public frmVenda()
+        public frmExibirVendas()
         {
             InitializeComponent();
         }
@@ -21,7 +21,6 @@ namespace Ae___Controle_de_Vendas.Formulários
         Venda v = new Venda();
         Cliente cliente = new Cliente();
         Usuario usuario = new Usuario();
-        DataTable formaPagamento = frmPagamento.getFormaPagamento();
         Item item = new Item();
         NotaFiscal NotaFiscal = new NotaFiscal();
         Produto produto = new Produto();
@@ -53,18 +52,13 @@ namespace Ae___Controle_de_Vendas.Formulários
             try
             {
                 cboStatus.SelectedValue = v.StatusId;
-                txtPesquisa.Text = "" + v.Id;
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.Message);
             }
-
-
-        }
-
-        
+        } 
 
         private void CarregarGridVenda()
         {
@@ -97,7 +91,7 @@ namespace Ae___Controle_de_Vendas.Formulários
                     dt.Rows[i]["Cliente"] = "-";
                 }
                 dt.Rows[i]["Funcionario"] = usuario.Nome;
-                dt.Rows[i]["F. Pagamento"] = "Ajustar!";
+                dt.Rows[i]["F. Pagamento"] = frmPagamento.getFormaPagamento(Convert.ToInt32(dt.Rows[i]["FormaPagamentoId"]));
                 dt.Rows[i]["Preco Venda"] = dt.Rows[i]["PRECO"]; 
 
             }
@@ -168,7 +162,6 @@ namespace Ae___Controle_de_Vendas.Formulários
 
         }
 
-
         private void LimparCampos() {
             v = new Venda();
             CarregarGridVenda();
@@ -178,13 +171,10 @@ namespace Ae___Controle_de_Vendas.Formulários
             cboStatus.SelectedIndex = -1;
         }
 
-        private void txtPesquisa_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtPesquisa_KeyPress(object sender, KeyPressEventArgs e)
         {
+            Global.SomenteNumeros(e.KeyChar, (sender as TextBox).Text);
+           
 
         }
 
@@ -227,7 +217,6 @@ namespace Ae___Controle_de_Vendas.Formulários
         private void cboStatus_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
-
 
         private void CarregarCategorias()
         {
@@ -289,7 +278,7 @@ namespace Ae___Controle_de_Vendas.Formulários
 
 
             gravar();
-                MessageBox.Show("Alteração na Venda Realida Com Sucesso!", "Alteração de Venda", MessageBoxButtons.OK, MessageBoxIcon.None);
+                MessageBox.Show("Alteração Realizada Com Sucesso!", "Alteração de Venda", MessageBoxButtons.OK, MessageBoxIcon.None);
 
         }
 
@@ -298,9 +287,15 @@ namespace Ae___Controle_de_Vendas.Formulários
             LimparCampos();
         }
 
-        private void lblPesquisa_Click(object sender, EventArgs e)
+        private void txtPesquisa_TextChanged(object sender, EventArgs e)
         {
+            if (txtPesquisa.Text.Length > 0)
+            {
 
+                v.Id = Convert.ToInt32(txtPesquisa.Text);
+                CarregarGridVenda();
+
+            }
         }
     }
 }

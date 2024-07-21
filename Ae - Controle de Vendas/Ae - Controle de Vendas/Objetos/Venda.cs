@@ -78,7 +78,6 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
                 dt = acesso.Consultar(sql, parameters);
                 if (dt.Rows.Count > 0)
                 {
-                    // Obtém a descrição do status
                     status = dt.Rows[0]["Descricao"].ToString();
                 }
 
@@ -175,38 +174,5 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
                 throw new Exception(ex.Message);
             }
         }
-    
-    //public DataTable ConsultarInner()
-    //{
-    //    try
-    //    {
-    //        parameters.Clear();
-    //        sql = "SELECT Id,ClienteId, FuncionarioId, FormaPagamentoId ";
-    //        sql += "FROM tblVenda ";
-
-    //        if (Id != 0)
-    //        {
-    //            sql += "WHERE Id = @id;";
-    //            parameters.Add(new SqlParameter("@id", Id));
-    //        }
-
-
-    //        dt = acesso.Consultar(sql, parameters);
-
-    //        if (dt.Rows.Count > 0)
-    //        {
-    //            Id = Convert.ToInt32(dt.Rows[0]["Id"]);
-    //            Cliente.Id = Convert.ToInt32(dt.Rows[0]["ClienteId"]);
-    //            Usuario.Id = Convert.ToInt32(dt.Rows[0]["FuncionarioId"]);
-    //            FormaPagamentoId = Convert.ToInt32(dt.Rows[0]["FormaPagamentoId"]);
-    //        }
-
-    //        return dt;
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        throw new Exception(ex.Message);
-    //    }
-    //}
 }
 }
