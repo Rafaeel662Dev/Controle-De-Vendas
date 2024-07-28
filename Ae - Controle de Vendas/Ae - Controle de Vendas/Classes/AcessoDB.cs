@@ -24,13 +24,15 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
         private void Desconectar()
         {
             try
             {
+                
+
                 if (conn.State == ConnectionState.Open)
                 {
                     conn.Close();

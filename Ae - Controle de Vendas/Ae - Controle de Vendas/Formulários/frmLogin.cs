@@ -21,6 +21,8 @@ namespace Ae___Controle_de_Vendas
 
         private void btnAcessar_Click(object sender, EventArgs e)
         {
+
+
             string msg = PreencherCampos();
             if (msg != string.Empty)
             {
@@ -35,7 +37,7 @@ namespace Ae___Controle_de_Vendas
                 string senhaCriptografada = Global.Criptografar(txtSenha.Text);
                 Usuario usuario = new Usuario();
                 usuario.Login = txtUsuario.Text;
-               
+
                 usuario.Consultar();
                 if (usuario.Id == 0)
                 {
@@ -43,11 +45,11 @@ namespace Ae___Controle_de_Vendas
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-              
+
 
                 if (!usuario.Autenticar(senhaCriptografada))
                 {
-                    
+
                     MessageBox.Show("Usuário e/ou Senha Inválido!!!", "Login",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -64,11 +66,11 @@ namespace Ae___Controle_de_Vendas
 
                 MessageBox.Show($"Bem vindo {usuario.Nome}.", "Login",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
-             
+
+
                 Global.IdUsuarioLogado = usuario.Id;
                 DialogResult = DialogResult.OK;
-               
+
 
             }
             catch (Exception ex)

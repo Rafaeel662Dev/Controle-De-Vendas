@@ -1,17 +1,13 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
-using System.Linq;
-using System.Net.NetworkInformation;
+using System.Data.SqlClient;
+using System.Globalization;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
 using System.Windows.Forms;
-using System.Globalization;
-
 
 namespace Ae___Controle_de_Vendas.Classes.Outros
 {
@@ -20,7 +16,11 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
         public static string Conexao = string.Empty;
         public static string Servidor = string.Empty;
         public static string Banco = string.Empty;
+        public static string Usuario = string.Empty;
+        public static string Password = string.Empty;
+        public static string Porta = string.Empty;
         public static int IdUsuarioLogado = 0;
+
         public static string Criptografar(string senha)
         {
             Byte[] original;
@@ -33,22 +33,29 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
         }
 
         public static bool CompararSenhas(string senhaOriginal, string senhaDigitada)
-{
-    string hashSenhaOriginal = Criptografar(senhaDigitada);
+        {
+            string hashSenhaOriginal = Criptografar(senhaDigitada);
 
-    // Comparando os hashes para verificar se são iguais
-    return hashSenhaOriginal.Equals(senhaOriginal, StringComparison.OrdinalIgnoreCase);
-}
-
-
+            // Comparando os hashes para verificar se são iguais
+            return hashSenhaOriginal.Equals(senhaOriginal, StringComparison.OrdinalIgnoreCase);
+        }
 
         public static void LerAppConfig()
         {
             Servidor = ConfigurationManager.AppSettings.Get("servidor");
             Banco = ConfigurationManager.AppSettings.Get("banco");
+            Usuario = ConfigurationManager.AppSettings.Get("user_azure");
+            Password = ConfigurationManager.AppSettings.Get("password_azure");
+            Porta = ConfigurationManager.AppSettings.Get("port");
 
-            Conexao = $"Data Source={Servidor};Initial Catalog={Banco};Integrated Security=true;";
+
+            // String de conexão para AAD
+            //Conexao = $"Data Source={Servidor};Initial Catalog={Banco};Integrated Security=true;";
+            Conexao = $"Server=tcp:{Servidor},{Porta};Initial Catalog={Banco};Persist Security Info=False;User ID={Usuario};Password={Password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
         }
+
+
         public static DataTable ConsultarEstados()
         {
             try
@@ -61,6 +68,7 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
                 throw new Exception(ex.Message);
             }
         }
+
         public static DataTable ConsultarCidades(int estadoId)
         {
             try
@@ -99,6 +107,7 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
                 throw new ArgumentException("Texto não está no formato monetário válido.");
             }
         }
+
         public static int ConsultarEstado(int cidadeId)
         {
             try
@@ -122,6 +131,7 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
                 throw new Exception(ex.Message);
             }
         }
+
         public static bool SomenteNumeros(char tecla, string texto)
         {
             if ((!char.IsDigit(tecla) && tecla != (char)Keys.Back))
@@ -129,6 +139,23 @@ namespace Ae___Controle_de_Vendas.Classes.Outros
                 return true;
             }
             return false;
+        }
+
+        public static void TestarConexao()
+        {
+            try
+            {
+                LerAppConfig();
+                using (SqlConnection connection = new SqlConnection(Conexao))
+                {
+                    connection.Open();
+                    MessageBox.Show("Conexão bem-sucedida!");
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }
