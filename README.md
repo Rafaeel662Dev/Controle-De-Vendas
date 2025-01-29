@@ -1,6 +1,6 @@
-*Controle de Vendas*
+Controle de Vendas
+Projeto Acadêmico desenvolvido em C# com SQL Server.
 
-Projeto Acadêmico, desenvolvido em linguagem C# com SQLSERVER
-
-Intuito: Criar uma aplicação Desktop Com Visual Basic para uma loja onde existe controle,criação e alteração de produtos,clientes,usuarios com banco de dados.
+Objetivo:
+Desenvolver uma aplicação Desktop utilizando Visual Basic para gerenciar o controle de vendas de uma loja. A aplicação permite a criação, alteração e exclusão de produtos, clientes e usuários, integrando-se com um banco de dados SQL Server para garantir a persistência e integridade das informações.
 
